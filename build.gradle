@@ -1,9 +1,10 @@
-buildscript { 						// 定义脚本使用资源
+buildscript {                        // 定义脚本使用资源
     apply from: 'dependencies.gradle' // 引入所需要的依赖库文件
-    repositories { 						// 脚本资源仓库
-        maven { url 'https://repo.spring.io/libs-milestone' }
+    repositories {                        // 脚本资源仓库
+//        maven { url 'https://repo.spring.io/libs-milestone' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
     }
-    dependencies { 						// 依赖库
+    dependencies {                        // 依赖库
         classpath libraries.'spring-boot-gradle-plugin'
     }
 }
@@ -39,8 +40,18 @@ subprojects {   // 子模块
         maven { url ALIYUN_JCENTER_URL } // 设置阿里云仓库
     }
     dependencies {  // 公共依赖库管理
-//        compile(
-//        )
+        compile(
+                'org.springframework.boot:spring-boot-devtools' // 允许项目热部署
+        )
+        testImplementation('org.springframework.boot:spring-boot-starter-test') {
+            // 排除
+            exclude group: 'junit', module: 'junit'
+        }
+        testImplementation(enforcedPlatform(libraries.'junit-bom'))
+        testImplementation(libraries.'junit-jupiter-api')
+        testImplementation(libraries.'junit-vintage-engine')
+        testImplementation(libraries.'junit-jupiter-engine')
+        testImplementation(libraries.'junit-platform-launcher')
     }
     sourceSets {    // 源代码目录配置
         main { // main及相关子目录配置

@@ -1,4 +1,4 @@
-package com.yootk; // 父包，这个包中的所有子包的类会被自动扫描
+package com.demo; // 父包，这个包中的所有子包的类会被自动扫描
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -22,26 +22,24 @@ subprojects {   // 子模块
     repositories {  // 配置Gradle仓库
         def ALIYUN_REPOSITORY_URL = 'http://maven.aliyun.com/nexus/content/groups/public'
         def ALIYUN_JCENTER_URL = 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
-        all {
-            ArtifactRepository repo ->
-                if (repo instanceof MavenArtifactRepository) {
-                    def url = repo.url.toString()
-                    if (url.startsWith('https://repo1.maven.org/maven2')) {
-                        project.logger.lifecycle "Repository ${repo.url} replaced by $ALIYUN_REPOSITORY_URL."
-                        remove repo
-                    }
-                    if (url.startsWith('https://jcenter.bintray.com/')) {
-                        project.logger.lifecycle "Repository ${repo.url} replaced by $ALIYUN_JCENTER_URL."
-                        remove repo
-                    }
+        all { ArtifactRepository repo ->
+            if (repo instanceof MavenArtifactRepository) {
+                def url = repo.url.toString()
+                if (url.startsWith('https://repo1.maven.org/maven2')) {
+                    project.logger.lifecycle "Repository ${repo.url} replaced by $ALIYUN_REPOSITORY_URL."
+                    remove repo
                 }
+                if (url.startsWith('https://jcenter.bintray.com/')) {
+                    project.logger.lifecycle "Repository ${repo.url} replaced by $ALIYUN_JCENTER_URL."
+                    remove repo
+                }
+            }
         }
         maven { url ALIYUN_REPOSITORY_URL } // 设置阿里云仓库
         maven { url ALIYUN_JCENTER_URL } // 设置阿里云仓库
     }
     dependencies {  // 公共依赖库管理
-        compile(
-                'org.springframework.boot:spring-boot-devtools' // 允许项目热部署
+        compile('org.springframework.boot:spring-boot-devtools' // 允许项目热部署
         )
         testImplementation('org.springframework.boot:spring-boot-starter-test') {
             // 排除
@@ -52,6 +50,9 @@ subprojects {   // 子模块
         testImplementation(libraries.'junit-vintage-engine')
         testImplementation(libraries.'junit-jupiter-engine')
         testImplementation(libraries.'junit-platform-launcher')
+        // 自动生成类
+        compileOnly(libraries.'lombok') // 在编译时生效
+        annotationProcessor(libraries.'lombok') // 注解生效
     }
     sourceSets {    // 源代码目录配置
         main { // main及相关子目录配置

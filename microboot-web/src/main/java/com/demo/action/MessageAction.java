@@ -3,15 +3,17 @@ package com.demo.action;
 import com.demo.service.IMessageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
 
 @RestController // 直接基于Rest架构进行处理，省略了@ResponseBody注解
 @RequestMapping("/message/*") // 添加父路径
 public class MessageAction { // 控制层的实现类
     private static final Logger LOGGER = LoggerFactory.getLogger(MessageAction.class); // 获取日志对象
-    @Autowired
+
+    @Resource
     private IMessageService messageService;
 
     @RequestMapping("echo") // 子路径

@@ -7,13 +7,16 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
+    @ExceptionHandler
     @Override
     public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
         WebMvcConfigurer.super.configureMessageConverters(converters);
@@ -35,6 +38,7 @@ public class WebConfig implements WebMvcConfigurer {
                 SerializerFeature.WriteNullNumberAsZero,    // 数字为空使用0表示i
                 SerializerFeature.DisableCircularReferenceDetect   // 禁用循环引用
         );
+        fastJsonHttpMessageConverter.setFastJsonConfig(config);
 
         // 4. 配置响应头
         List<MediaType> fastjsonMediaType = new ArrayList<>();// 定义所有响应类型

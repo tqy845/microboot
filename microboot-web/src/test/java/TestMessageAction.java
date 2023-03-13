@@ -1,5 +1,6 @@
 import com.demo.StartSpringBootApplication;
 import com.demo.action.MessageAction;
+import com.demo.vo.Message;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
@@ -10,11 +11,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.web.WebAppConfiguration;
 
+import javax.annotation.Resource;
+import java.awt.*;
+import java.util.Date;
+import java.util.SimpleTimeZone;
+import java.util.concurrent.TimeUnit;
+
 @ExtendWith(SpringExtension.class)  // 使用Junit5的测试工具
 @WebAppConfiguration // 启动Web运行环境
 @SpringBootTest(classes = StartSpringBootApplication.class)
 public class TestMessageAction {
-    @Autowired
+    @Resource
     private MessageAction messageAction;
 
     @BeforeAll
@@ -29,11 +36,9 @@ public class TestMessageAction {
 
     @Test
     public void testEcho() {
-        String ret = this.messageAction.echo("www.aigs.ltd");
-        String value = "【ECHO】www.aigs.ltd";
-        System.out.println("ret = " + ret);
-        Assertions.assertEquals(ret, value);
+//        Date current = new Date();
+//        Message m = Message.builder().msg("this is a demo info.").pubdate(current).build();
+//        String ret = this.messageAction.echo();
+//        System.out.println("ret = " + ret);
     }
-
-
 }

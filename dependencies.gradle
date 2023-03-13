@@ -3,19 +3,24 @@ ext.versions = [    // 定义所有要使用的版本号
                     junit                : '5.5.2', // Junit版本
                     junitPlatformLauncher: '1.9.2', // Junit运行平台版本
                     lombok               : '1.18.26',
-                    fastjson          : '1.2.83'
+                    fastjson             : '1.2.80',
+                    jackson              : '2.12.2'
 
 ]
 ext.libraries = [   // 定义所有的依赖库
-                    'spring-boot-gradle-plugin': "org.springframework.boot:spring-boot-gradle-plugin:${versions.springboot}",
+                    'spring-boot-gradle-plugin'          : "org.springframework.boot:spring-boot-gradle-plugin:${versions.springboot}",
                     // 有关项目测试的依赖
-                    'junit-jupiter-api'        : "org.junit.jupiter:junit-jupiter-api:${versions.junit}",
-                    'junit-vintage-engine'     : "org.junit.vintage:junit-vintage-engine:${versions.junit}",
-                    'junit-jupiter-engine'     : "org.junit.jupiter:junit-jupiter-engine:${versions.junit}",
-                    'junit-platform-launcher'  : "org.junit.platform:junit-platform-launcher:${versions.junitPlatformLauncher}",
-                    'junit-bom'                : "org.junit:junit-bom:${versions.junit}",
+                    'junit-jupiter-api'                  : "org.junit.jupiter:junit-jupiter-api:${versions.junit}",
+                    'junit-vintage-engine'               : "org.junit.vintage:junit-vintage-engine:${versions.junit}",
+                    'junit-jupiter-engine'               : "org.junit.jupiter:junit-jupiter-engine:${versions.junit}",
+                    'junit-platform-launcher'            : "org.junit.platform:junit-platform-launcher:${versions.junitPlatformLauncher}",
+                    'junit-bom'                          : "org.junit:junit-bom:${versions.junit}",
                     // 有关Lombok的依赖
-                    'lombok'                   : "org.projectlombok:lombok:${versions.lombok}",
+                    'lombok'                             : "org.projectlombok:lombok:${versions.lombok}",
                     // 有关FastJson的依赖
-                    'fastjson'                : "com.alibaba:fastjson:${versions.fastjson}"
+                    'fastjson'                           : "com.alibaba:fastjson:${versions.fastjson}",
+                    // 有关Jackson的依赖
+                    'jackson-dataformat-xml'             : "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${versions.jackson}",
+                    'jackson-databind'                   : "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}",
+                    'jackson-databindjackson-annotations': "com.fasterxml.jackson.core:jackson-annotations:${versions.jackson}",
 ]

@@ -106,7 +106,8 @@ project('microboot-web') { // 子模块
         compile(libraries.'fastjson') // 引入FastJson依赖
         compile(libraries.'jackson-dataformat-xml')
         compile(libraries.'jackson-databind')
-        compile(libraries.'jackson-databindjackson-annotations')
+        compile(libraries.'jackson-annotations')
+        compile(libraries.'itextpdf')
     }
 }
 project('microboot-common') { // 子模块

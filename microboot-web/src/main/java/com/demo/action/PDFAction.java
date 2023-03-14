@@ -19,10 +19,10 @@ import java.io.IOException;
 @RequestMapping("/data/*")
 public class PDFAction {
     @GetMapping("pdf")
-    public void createPDF(HttpServletResponse httpServletResponse) throws IOException, DocumentException {
+    public void createPDFData(HttpServletResponse httpServletResponse) throws IOException, DocumentException {
         httpServletResponse.setHeader("Content-type", "application/pdf");
         // 开始强制下载
-        httpServletResponse.setHeader("Content-Dispositon", "attachement;filename=aigs.pdf");
+        httpServletResponse.setHeader("Content-Disposition", "attachment;filename=aigs.pdf");
         // 生成PDF文件
         Document document = new Document(PageSize.A4, 10, 10, 50, 20);
         // 获取PDF输出流配置

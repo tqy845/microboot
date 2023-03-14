@@ -5,7 +5,8 @@ ext.versions = [    // 定义所有要使用的版本号
                     lombok               : '1.18.26',
                     fastjson             : '1.2.80',
                     jackson              : '2.12.1',
-                    itextpdf             : '5.5.13.3'
+                    itextpdf             : '5.5.13.3',
+                    easypoi              : '4.4.0'
 
 ]
 ext.libraries = [   // 定义所有的依赖库
@@ -24,4 +25,7 @@ ext.libraries = [   // 定义所有的依赖库
                     'jackson-dataformat-xml'   : "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${versions.jackson}",
                     'jackson-databind'         : "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}",
                     'jackson-annotations'      : "com.fasterxml.jackson.core:jackson-annotations:${versions.jackson}",
-                    'itextpdf'                 : "com.itextpdf:itextpdf:${versions.itextpdf}",]
+                    // 生成有关PDF的依赖库
+                    'itextpdf'                 : "com.itextpdf:itextpdf:${versions.itextpdf}",
+                    // 生成有关Excel的依赖库
+                    'easypoi'                  : "cn.afterturn:easypoi-spring-boot-starter:${versions.easypoi}",]

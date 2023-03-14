@@ -108,6 +108,7 @@ project('microboot-web') { // 子模块
         compile(libraries.'jackson-databind')
         compile(libraries.'jackson-annotations')
         compile(libraries.'itextpdf')
+        compile(libraries.'easypoi')
     }
 }
 project('microboot-common') { // 子模块

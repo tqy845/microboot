@@ -4,8 +4,6 @@ import cn.afterturn.easypoi.excel.annotation.Excel;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.xml.bind.annotation.XmlElement;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
 @Data

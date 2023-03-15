@@ -1,0 +1,9 @@
+source: # 自定义的KEY名称
+  mysql: mysql://localhost:3306/aigs  # 自定义信息（KEY = source.mysql value = 内容）
+  redis: redis://localhost:6379/0
+  messages:
+    爱果:www.aigs.ltd
+    demo:www.demo.ltd
+  books: # Map形式进行定义
+    text1: 'this is a demo info'
+    text2: 'this is text2 info'

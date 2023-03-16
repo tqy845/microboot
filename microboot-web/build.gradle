@@ -9,6 +9,15 @@ repositories {
     mavenCentral()
 }
 
+bootJar {
+    // 由SpringBoot提供的任务名称
+    // 自定义配置项
+    archiveClassifier = "lee"  // 打包的文件追加一个后缀
+    archiveBaseName = "aigs"
+    archiveVersion = project_version
+    mainClass = 'com.demo.StartSpringBootApplication'
+}
+
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }

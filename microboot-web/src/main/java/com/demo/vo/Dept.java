@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 import java.util.List;
 
 @Data
-@ConfigurationProperties(prefix = "object")
+@ConfigurationProperties(prefix = "source")
 @Component
 public class Dept {
     private Long deptno;

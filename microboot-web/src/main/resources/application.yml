@@ -1,3 +1,5 @@
 server:
   port: 80
-
+  servlet:
+    context-parameters:
+      teacher: Emma

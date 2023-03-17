@@ -6,7 +6,7 @@ ext.versions = [    // 定义所有要使用的版本号
                     fastjson             : '1.2.80',
                     jackson              : '2.12.1',
                     itextpdf             : '5.5.13.3',
-                    easypoi              : '4.4.0'
+                    easypoi              : '4.4.0',
 
 ]
 ext.libraries = [   // 定义所有的依赖库
@@ -28,4 +28,5 @@ ext.libraries = [   // 定义所有的依赖库
                     // 生成有关PDF的依赖库
                     'itextpdf'                 : "com.itextpdf:itextpdf:${versions.itextpdf}",
                     // 生成有关Excel的依赖库
-                    'easypoi'                  : "cn.afterturn:easypoi-spring-boot-starter:${versions.easypoi}",]
+                    'easypoi'                  : "cn.afterturn:easypoi-spring-boot-starter:${versions.easypoi}",
+]

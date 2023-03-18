@@ -3,3 +3,7 @@ server:
   servlet:
     context-parameters:
       teacher: Emma
+
+spring:
+  messages:
+    basename: i18n/Message

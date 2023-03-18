@@ -4,6 +4,7 @@ import org.eclipse.jetty.server.ServletAttributes;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -29,11 +30,11 @@ public class ObjectAction {
     }
 
     @RequestMapping("second")
-    public Object secondShow(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse) {
-//         = (ServletAttributes)RequestContextHolder.getRequestAttributes();
-
+    public Object secondShow() {
+        ServletRequestAttributes servletRequestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        HttpServletRequest httpServletRequest = servletRequestAttributes.getRequest();
+        HttpServletResponse httpServletResponse = servletRequestAttributes.getResponse();
         Map<String, Object> result = new HashMap<>();
-
         result.put("【request】contextPath", httpServletRequest.getContextPath());
         result.put("【request】messageParam", httpServletRequest.getParameter("message"));
         result.put("【request】method", httpServletRequest.getMethod());

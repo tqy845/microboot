@@ -7,3 +7,10 @@ server:
 spring:
   messages:
     basename: i18n/Message
+  servlet:
+    multipart:
+      enabled: true # 启用上传文件支持，其默认为 true
+      max-file-size: 100MB # 单次上传的最大长度
+      max-request-size: 200MB # 每次请求允许上传的最大长度
+      file-size-threshold: 1MB # 每次达到1MB时写入磁盘
+      location: / # 临时存储目录

@@ -116,6 +116,9 @@ project('microboot-common') { // 子模块
         compile('org.springframework.boot:spring-boot-starter-web') {
             exclude group: 'org.springframework.boot', 'module': 'spring-boot-starter-tomcat'
         } // 引入SpringBoot依赖
-        compile('org.springframework.boot:spring-boot-starter-jetty')
+        // jetty是架构要比tomcat简单，一些程序员觉得用来开发用jetty启动快，资源占用少
+//        compile('org.springframework.boot:spring-boot-starter-jetty')
+        // undertow是一个天生支持高并发的容器，可以轻松抗下10w+并发，然后是通过程序对其进行控制
+        compile('org.springframework.boot:spring-boot-starter-undertow')
     } // 配置子模块依赖
 }

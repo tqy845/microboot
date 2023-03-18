@@ -19,7 +19,7 @@ public class MessageAction { // 控制层的实现类
 
     @RequestMapping("echo") // 子路径
     public String echo(Message message) { // 进行请求参数的接收以及请求内容的回应
-        LOGGER.info("接收msg的请求参数，内容为：{}", message); // 日志输出
+//        LOGGER.info("接收msg的请求参数，内容为：{}", message); // 日志输出
         return this.messageService.echo(message); // 直接进行Rest响应
     }
 }

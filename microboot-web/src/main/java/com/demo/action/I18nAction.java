@@ -1,6 +1,5 @@
 package com.demo.action;
 
-import com.demo.vo.Message;
 import org.springframework.context.MessageSource;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

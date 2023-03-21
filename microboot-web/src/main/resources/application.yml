@@ -16,19 +16,18 @@ spring:
       location: / # 临时存储目录
   mail:
     host: smtp.exmail.qq.com # 一定使用合法的SMTP
-    username: system.aigs.ltd
+    username: system@aigs.ltd
     password: 4FhLnzR5p7EU8uSm
     properties:
       smtp:
-        socketFactoryClass: javax.net.ssl.SSLSocketFactory
-        #表示开启 DEBUG 模式，这样，邮件发送过程的日志会在控制台打印出来，方便排查错误
-        debug: true
-      #      mail.smtp.auth: true # 启用SMTP认证
-      #      mail.smtp.starttls.enabled: true  # 启用SMTP认证
-      #      mail.smtp.starttls.required : true # 必须采用加密链接
+      #表示开启 DEBUG 模式，这样，邮件发送过程的日志会在控制台打印出来，方便排查错误
+      #        debug: true
+      mail.smtp.auth: true # 启用SMTP认证
+      mail.smtp.starttls.enabled: true  # 启用SMTP认证
+      mail.smtp.starttls.required: true # 必须采用加密链接
       mail.smtp.ssl.enabled: true
-    #      mail.smtp.ssl.socketFactory.fallback: false
     default-encoding: utf-8
     port: 465
     test-connection: false
+    protocol: smtps
 

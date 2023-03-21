@@ -21,14 +21,15 @@ public class TestSendMail {
     @Resource
     private JavaMailSender javaMailSender;
 
-
     @Test
     public void testSend() {
         // 建立邮件结构
-        SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
-        simpleMailMessage.setFrom("system@aigs.ltd");
-        simpleMailMessage.setTo("644669785@qq.com");
-        simpleMailMessage.setText("this'is a demo info.");
-        this.javaMailSender.send(simpleMailMessage);
+        SimpleMailMessage message = new SimpleMailMessage();
+        message.setFrom("system@aigs.ltd");
+        message.setTo("644669785@qq.com");
+        message.setTo("2891873602@qq.com");
+        message.setSubject("爱果持续为您服务");
+        message.setText("This is a test email from Spring Boot and JavaMailSender.");
+        javaMailSender.send(message);
     }
 }

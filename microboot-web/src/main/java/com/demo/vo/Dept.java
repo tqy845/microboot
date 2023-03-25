@@ -11,7 +11,7 @@ import java.util.List;
 @Component
 public class Dept {
     private Long deptno;
-    private String dname;
+    private String name;
     private Company company;    // 关联属性
     private List<Emp> emps;
 }

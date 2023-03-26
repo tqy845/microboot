@@ -1,5 +1,7 @@
 package com.demo.service;
 
+import com.demo.vo.Message;
+
 public interface IMessageService {
-    String echo(String msg);
+    String echo(Message msg);
 }

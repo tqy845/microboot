@@ -14,15 +14,15 @@ version project_version
 apply from: 'dependencies.gradle' // 引入所需要的依赖库文件
 def env = System.getProperty("env") ?: 'dev' // 获取env环境属性
 subprojects {   // 子模块
-    apply plugin: 'java' // 引入之前的插件
+    apply plugin: 'java-library' // 引入之前的插件
     apply plugin: 'org.springframework.boot' // 引入之前的插件
     apply plugin: 'io.spring.dependency-management' // 引入之前的插件
     sourceCompatibility = project_jdk // 本次项目都是基于JDK-11版本编写的
     targetCompatibility = project_jdk // 本次项目都是基于JDK-11版本编写的
     repositories {  // 配置Gradle仓库
-        def ALIYUN_REPOSITORY_URL = 'http://maven.aliyun.com/nexus/content/groups/public'
-        def ALIYUN_JCENTER_URL = 'http://maven.aliyun.com/nexus/content/repositories/jcenter'
-        all { ArtifactRepository repo ->
+        def ALIYUN_REPOSITORY_URL = 'https://maven.aliyun.com/nexus/content/groups/public'
+        def ALIYUN_JCENTER_URL = 'https://maven.aliyun.com/nexus/content/repositories/jcenter'
+        configureEach { ArtifactRepository repo ->
             if (repo instanceof MavenArtifactRepository) {
                 def url = repo.url.toString()
                 if (url.startsWith('https://repo1.maven.org/maven2')) {
@@ -39,7 +39,7 @@ subprojects {   // 子模块
         maven { url ALIYUN_JCENTER_URL } // 设置阿里云仓库
     }
     dependencies {  // 公共依赖库管理
-        compile('org.springframework.boot:spring-boot-devtools' // 允许项目热部署
+        implementation('org.springframework.boot:spring-boot-devtools' // 允许项目热部署
         )
         testImplementation('org.springframework.boot:spring-boot-starter-test') {
             // 排除
@@ -68,60 +68,66 @@ subprojects {   // 子模块
         useJUnitPlatform() // 使用JUnit测试平台
     }
     // 最终生成的jar文件名称：baseName-version-classifier.extension
-    task sourceJar(type: Jar, dependsOn: classes) { // 源代码的打包任务
+    tasks.register('sourceJar', Jar) {
+        dependsOn classes // 源代码的打包任务
         archiveClassifier = 'sources' // 设置文件的后缀
         from sourceSets.main.allSource // 所有源代码的读取路径
     }
-    task javadocTask(type: Javadoc) { // JavaDoc文档打包任务
+    tasks.register('javadocTask', Javadoc) { // JavaDoc文档打包任务
         options.encoding = 'UTF-8' // 设置文件编码
         source = sourceSets.main.allJava // 定义所有的Java源代码
     }
-    task javadocJar(type: Jar, dependsOn: javadocTask) { // 先生成JavaDoc再打包
+    tasks.register('javadocJar', Jar) {
+        dependsOn javadocTask // 先生成JavaDoc再打包
         archiveClassifier = 'javadoc' // 文件标记类型
         from javadocTask.destinationDir // 通过JavadocTask任务中找到目标路径
     }
-    tasks.withType(Javadoc) {   // 文档编码配置
+    tasks.withType(Javadoc).configureEach {   // 文档编码配置
         options.encoding = 'UTF-8' // 定义编码
     }
-    tasks.withType(JavaCompile) {   // 编译编码配置
+    tasks.withType(JavaCompile).configureEach {   // 编译编码配置
         options.encoding = 'UTF-8' // 定义编码
     }
     artifacts { // 最终的打包的操作任务
         archives sourceJar // 源代码打包
         archives javadocJar // javadoc打包
     }
-    gradle.taskGraph.whenReady {    // 在所有的操作准备好后触发
+    gradle.taskGraph.whenReady(({    // 在所有的操作准备好后触发
         tasks.each { task ->    // 找出所有的任务
             if (task.name.contains('test')) {   // 如果现在发现有test任务
                 // 如果将enabled设置为true表示要执行测试任务，如果设置为false表示不执行测试任务
                 task.enabled = true
             }
         }
-    }
+    } as Action<TaskExecutionGraph>))
     [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8' // 编码配置
 }
 project('microboot-web') { // 子模块
     dependencies { // 配置子模块依赖
-        compile(project(':microboot-common')) // 引入其他子模块
-        compile('org.springframework.boot:spring-boot-starter-aop') // 引入aop依赖库
-        compile('org.springframework.boot:spring-boot-starter-mail')
-        compile(libraries.'fastjson') // 引入FastJson依赖
-//        compile(libraries.'jackson-dataformat-xml')
-//        compile(libraries.'jackson-databind')
-//        compile(libraries.'jackson-annotations')
-        compile(libraries.'itextpdf')
-        compile(libraries.'easypoi')
-        compile(libraries.'hibernate')
+        implementation project(':microboot-common') // 引入其他子模块
+        implementation 'org.springframework.boot:spring-boot-starter-aop' // 引入aop依赖库
+        implementation 'org.springframework.boot:spring-boot-starter-mail'
+        implementation libraries.'fastjson' // 引入FastJson依赖
+//        implementation  libraries.'jackson-dataformat-xml'
+//        implementation  libraries.'jackson-databind'
+//        implementation  libraries.'jackson-annotations'
+        implementation libraries.'itextpdf'
+        implementation libraries.'easypoi'
+        implementation libraries.'hibernate'
     }
 }
 project('microboot-common') { // 子模块
     dependencies {
-        compile('org.springframework.boot:spring-boot-starter-web') {
+        api('org.springframework.boot:spring-boot-starter-web') {
             exclude group: 'org.springframework.boot', 'module': 'spring-boot-starter-tomcat'
         } // 引入SpringBoot依赖
-        // jetty是架构要比tomcat简单，一些程序员觉得用来开发用jetty启动快，资源占用少
+        // jett`y是架构要比tomcat简单，一些程序员觉得用来开发用jetty启动快，资源占用少
 //        compile('org.springframework.boot:spring-boot-starter-jetty')
         // undertow是一个天生支持高并发的容器，可以轻松抗下10w+并发，然后是通过程序对其进行控制
-        compile('org.springframework.boot:spring-boot-starter-undertow')
+        api 'org.springframework.boot:spring-boot-starter-undertow'
     } // 配置子模块依赖
+}
+
+void main(Closure closure) {
+
 }

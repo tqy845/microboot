@@ -1,6 +1,6 @@
 package com.demo.config;
 
-import com.demo.intercector.MessageValidateInterceptor;
+import com.demo.interceptor.MessageValidateInterceptor;
 import com.demo.interceptor.DefaultHandlerInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

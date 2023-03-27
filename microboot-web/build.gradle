@@ -3,7 +3,7 @@ plugins {
     id 'war'    // 当前项目具备有war的打包支持
 }
 
-group 'com.yootk'
+group 'com.demo'
 version '1.0.0'
 
 repositories {
@@ -20,5 +20,5 @@ bootJar {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'junit', name: 'junit', version: '4.13.1'
 }

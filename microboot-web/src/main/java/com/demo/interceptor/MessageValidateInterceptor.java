@@ -1,4 +1,4 @@
-package com.demo.intercector;
+package com.demo.interceptor;
 
 
 import com.fasterxml.jackson.databind.ObjectMapper;

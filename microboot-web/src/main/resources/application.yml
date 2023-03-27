@@ -31,3 +31,8 @@ spring:
     test-connection: false
     protocol: smtps
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" # 开启所有监控

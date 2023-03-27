@@ -1,6 +1,7 @@
 package com.demo.vo;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
+import com.demo.commond.validation.annotation.RegexValidator;
 import lombok.Data;
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -27,4 +28,8 @@ public class Message {
 
     @Digits(integer = 1, fraction = 0)
     private Integer level;
+
+    @NotBlank(message = "{message.flag.not-blank.error}")
+    @RegexValidator(pattern = "[a-zA-Z]{1,5}-\\d{1,3 }", message = "{message.flag.regex.error}") // 自定义的验证规则
+    private String flag;
 }

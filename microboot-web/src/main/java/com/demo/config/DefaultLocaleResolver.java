@@ -1,5 +1,6 @@
 package com.demo.config;
 
+import org.springframework.boot.autoconfigure.AutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.StringUtils;
@@ -9,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Locale;
 
-@Configuration  // 配置Bean
+@AutoConfiguration  // 配置Bean
 public class DefaultLocaleResolver implements LocaleResolver {
 
     @Override

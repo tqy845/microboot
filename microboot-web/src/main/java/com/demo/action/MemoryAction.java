@@ -2,7 +2,11 @@ package com.demo.action;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,6 +20,10 @@ public class MemoryAction {
         Runtime runtime = Runtime.getRuntime();
 
         Map<String, Object> data = new HashMap<>();
+
+        HttpServletRequest httpServletRequest = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+        data.put("demo", httpServletRequest.getParameter("demo"));
+
 
         data.put("maxMemory", runtime.maxMemory());
         data.put("totalMemory", runtime.totalMemory());

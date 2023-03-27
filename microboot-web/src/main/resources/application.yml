@@ -1,7 +1,7 @@
 server:
   port: 80
   servlet:
-    context-parameters:
+    context-parameters: # 启动初始化参数s
       teacher: Emma
 
 spring:

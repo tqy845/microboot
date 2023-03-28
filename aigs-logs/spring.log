@@ -1,0 +1,27 @@
+2023-03-28 21:59:52 [restartedMain] INFO  [com.demo.StartSpringBootApplication] Starting StartSpringBootApplication using Java 11.0.18 on Jijia with PID 4656 (F:\自动备份\Wrokspace\Java\microboot\microboot-web\build\classes\java\main started by 64466 in F:\自动备份\Wrokspace\Java\microboot)
+2023-03-28 21:59:52 [restartedMain] INFO  [com.demo.StartSpringBootApplication] No active profile set, falling back to 1 default profile: "default"
+2023-03-28 21:59:52 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-28 21:59:52 [restartedMain] INFO  [org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-28 21:59:53 [restartedMain] WARN  [io.undertow.websockets.jsr] UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-03-28 21:59:53 [restartedMain] INFO  [io.undertow.servlet] Initializing Spring embedded WebApplicationContext
+2023-03-28 21:59:53 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 855 ms
+2023-03-28 21:59:54 [restartedMain] INFO  [org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer] LiveReload server is running on port 35729
+2023-03-28 21:59:54 [restartedMain] INFO  [io.undertow] starting server: Undertow - 2.2.23.Final
+2023-03-28 21:59:54 [restartedMain] INFO  [org.xnio] XNIO version 3.8.7.Final
+2023-03-28 21:59:54 [restartedMain] INFO  [org.xnio.nio] XNIO NIO Implementation Version 3.8.7.Final
+2023-03-28 21:59:54 [restartedMain] INFO  [org.jboss.threads] JBoss Threads version 3.1.0.Final
+2023-03-28 21:59:54 [restartedMain] INFO  [org.springframework.boot.web.embedded.undertow.UndertowWebServer] Undertow started on port(s) 80 (http)
+2023-03-28 21:59:54 [restartedMain] INFO  [io.undertow.servlet] Initializing Spring embedded WebApplicationContext
+2023-03-28 21:59:54 [restartedMain] INFO  [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] Root WebApplicationContext: initialization completed in 56 ms
+2023-03-28 21:59:54 [restartedMain] INFO  [org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver] Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-03-28 21:59:54 [restartedMain] INFO  [io.undertow] starting server: Undertow - 2.2.23.Final
+2023-03-28 21:59:54 [restartedMain] INFO  [org.springframework.boot.web.embedded.undertow.UndertowWebServer] Undertow started on port(s) 9090 (http)
+2023-03-28 21:59:54 [restartedMain] INFO  [com.demo.StartSpringBootApplication] Started StartSpringBootApplication in 1.94 seconds (JVM running for 2.657)
+2023-03-28 21:59:54 [RMI TCP Connection(2)-172.20.17.214] INFO  [io.undertow.servlet] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-28 21:59:54 [RMI TCP Connection(2)-172.20.17.214] INFO  [org.springframework.web.servlet.DispatcherServlet] Initializing Servlet 'dispatcherServlet'
+2023-03-28 21:59:54 [RMI TCP Connection(2)-172.20.17.214] INFO  [org.springframework.web.servlet.DispatcherServlet] Completed initialization in 1 ms
+2023-03-28 22:00:22 [XNIO-1 task-1] INFO  [com.demo.action.MessageAction] 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=demo-101)
+2023-03-28 22:00:22 [XNIO-1 task-1] ERROR [com.demo.action.MessageAction] 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=demo-101)
+2023-03-28 22:00:22 [XNIO-1 task-1] WARN  [com.demo.action.MessageAction] 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=demo-101)
+2023-03-28 22:00:22 [XNIO-1 task-1] TRACE [com.demo.action.MessageAction] 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=demo-101)
+2023-03-28 22:00:22 [XNIO-1 task-1] DEBUG [com.demo.action.MessageAction] 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=demo-101)

@@ -3,7 +3,6 @@ package com.demo.action;
 import com.demo.commond.validation.annotation.WrapResponse;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.context.request.RequestAttributes;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
@@ -29,6 +28,7 @@ public class MemoryAction {
         data.put("totalMemory", runtime.totalMemory());
         data.put("freeMemory", runtime.freeMemory());
 
+//        throw new RuntimeException("错误");
         return data;
     }
 }

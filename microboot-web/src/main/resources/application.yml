@@ -32,7 +32,24 @@ spring:
     protocol: smtps
 
 management:
+  server:
+    port: 9090
+  endpoint:
+    health:
+      show-details: always  # 显示异常信息
+      show-components: always # 显示组件信息
+    shutdown:
+      enabled: true # 允许远程关闭
   endpoints:
     web:
       exposure:
         include: "*" # 开启所有监控
+logging:
+  level: # 需要配置一个Map集合
+    root: info # 基本的日志级别
+    com.demo.action.MessageAction: trace
+  file:
+    path: aigs-logs # 日志保存的路径
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%logger] %msg%n" # 文件日志格式
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%logger] %msg%n" # 控制台日志格式

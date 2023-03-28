@@ -1,5 +1,7 @@
 package com.demo.advice;
 
+import com.demo.commond.validation.annotation.WrapResponse;
+import com.demo.vo.ResponseResult;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -18,14 +20,16 @@ public class GlobalExceptionAdvice {
     @ExceptionHandler
     @ResponseBody
     public Object exceptionHandler(Exception exception) {
-        Map<String, Object> ret = new HashMap<>();
-        ret.put("info", exception.getMessage());
-        ret.put("status", HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-        // 获取异常类型
-        ret.put("exception", exception.getClass().getName());
-        HttpServletRequest httpServletRequest = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
-        // 获取异常路径
-        ret.put("path", httpServletRequest.getRequestURI());
-        return ret;
+        Map<String, Object> ret = new HashMap<>() {{
+            put("info", exception.getMessage());
+            put("status", HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
+            // 获取异常类型
+            put("exception", exception.getClass().getName());
+            HttpServletRequest httpServletRequest = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+            // 获取异常路径
+            put("path", httpServletRequest.getRequestURI());
+        }};
+
+        return ResponseResult.builder().code(-1).message("fail").data(ret).build();
     }
 }

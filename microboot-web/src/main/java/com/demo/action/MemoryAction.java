@@ -1,5 +1,6 @@
 package com.demo.action;
 
+import com.demo.commond.validation.annotation.WrapResponse;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.RequestAttributes;
@@ -12,6 +13,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/jvm/*")
+@WrapResponse
 public class MemoryAction {
 
     @RequestMapping("memory")
@@ -23,8 +25,6 @@ public class MemoryAction {
 
         HttpServletRequest httpServletRequest = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
         data.put("demo", httpServletRequest.getParameter("demo"));
-
-
         data.put("maxMemory", runtime.maxMemory());
         data.put("totalMemory", runtime.totalMemory());
         data.put("freeMemory", runtime.freeMemory());

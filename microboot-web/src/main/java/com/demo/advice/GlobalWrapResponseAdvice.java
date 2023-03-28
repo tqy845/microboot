@@ -26,6 +26,6 @@ public class GlobalWrapResponseAdvice implements ResponseBodyAdvice<Object> {
 
     @Override
     public Object beforeBodyWrite(Object body, MethodParameter returnType, MediaType selectedContentType, Class<? extends HttpMessageConverter<?>> selectedConverterType, ServerHttpRequest request, ServerHttpResponse response) {
-        return ResponseResult.builder().code(200).message("success").data(body).build();
+        return ResponseResult.builder().code(ResponseResult.SUCCESS).message(ResponseResult.SUCCESS_INFO).data(body).build();
     }
 }

@@ -30,6 +30,6 @@ public class GlobalExceptionAdvice {
             put("path", httpServletRequest.getRequestURI());
         }};
 
-        return ResponseResult.builder().code(-1).message("fail").data(ret).build();
+        return ResponseResult.builder().code(ResponseResult.ERROR).message(ResponseResult.ERROR_INFO).data(ret).build();
     }
 }

@@ -25,3 +25,6 @@
 2023-03-28 22:00:22 [XNIO-1 task-1] WARN  [com.demo.action.MessageAction] 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=demo-101)
 2023-03-28 22:00:22 [XNIO-1 task-1] TRACE [com.demo.action.MessageAction] 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=demo-101)
 2023-03-28 22:00:22 [XNIO-1 task-1] DEBUG [com.demo.action.MessageAction] 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=demo-101)
+2023-03-28 22:18:14 [SpringApplicationShutdownHook] INFO  [io.undertow] stopping server: Undertow - 2.2.23.Final
+2023-03-28 22:18:14 [SpringApplicationShutdownHook] INFO  [io.undertow] stopping server: Undertow - 2.2.23.Final
+2023-03-28 22:18:14 [SpringApplicationShutdownHook] INFO  [io.undertow.servlet] Destroying Spring FrameworkServlet 'dispatcherServlet'

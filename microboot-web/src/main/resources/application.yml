@@ -47,9 +47,9 @@ management:
 logging:
   level: # 需要配置一个Map集合
     root: info # 基本的日志级别
-    com.demo.action.MessageAction: trace
-  file:
-    path: aigs-logs # 日志保存的路径
-  pattern:
-    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%logger] %msg%n" # 文件日志格式
-    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%logger] %msg%n" # 控制台日志格式
+    com.demo.action.MessageAction: warn # 针对开发包的日志级别
+#  file:
+#    path: aigs-logs # 日志保存的路径
+#  pattern:
+#    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%logger] %msg%n" # 文件日志格式
+#    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%logger] %msg%n" # 控制台日志格式

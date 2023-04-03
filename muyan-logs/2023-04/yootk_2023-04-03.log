@@ -6037,3 +6037,644 @@ com.demo.action.CustomersAction#create(Customers) mapped.
 2023-04-03 17:32:46.930  INFO [32m[][0;39m 22952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
 2023-04-03 17:32:47.993  INFO [32m[][0;39m 22952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
 2023-04-03 17:32:47.994  INFO [32m[][0;39m 22952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:32:53.465  INFO [32m[][0;39m 22952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:32:53.465  INFO [32m[][0;39m 22952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:32:53.614  WARN [33m[][0;39m 22952 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:32:53.614  WARN [33m[][0;39m 22952 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:32:53.735  WARN [33m[][0;39m 22952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:32:54.011  INFO [32m[][0;39m 22952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:32:54.015  INFO [32m[][0;39m 22952 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:32:54.038  INFO [32m[][0;39m 22952 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:32:54.070  INFO [32m[][0;39m 22952 --- [restartedMain] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:32:54.071  WARN [33m[][0;39m 22952 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2023-04-03 17:32:54.072  INFO [32m[][0;39m 22952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:32:54.073  INFO [32m[][0;39m 22952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-04-03 17:32:54.773  INFO [32m[][0;39m 22952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-04-03 17:32:54.779  INFO [32m[][0;39m 22952 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-03 17:32:54.796 ERROR [31m[][0;39m 22952 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2023-04-03 17:32:53.465  INFO [32m[][0;39m 22952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:32:53.465  INFO [32m[][0;39m 22952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:32:53.614  WARN [33m[][0;39m 22952 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:32:53.614  WARN [33m[][0;39m 22952 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:32:53.735  WARN [33m[][0;39m 22952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:32:54.011  INFO [32m[][0;39m 22952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:32:54.015  INFO [32m[][0;39m 22952 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:32:54.038  INFO [32m[][0;39m 22952 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:32:54.070  INFO [32m[][0;39m 22952 --- [restartedMain] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:32:54.071  WARN [33m[][0;39m 22952 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2023-04-03 17:32:54.072  INFO [32m[][0;39m 22952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:32:54.073  INFO [32m[][0;39m 22952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-04-03 17:32:54.773  INFO [32m[][0;39m 22952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-04-03 17:32:54.779  INFO [32m[][0;39m 22952 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-03 17:32:54.796 ERROR [31m[][0;39m 22952 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2023-04-03 17:33:22.805  INFO [32m[][0;39m 22952 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 22952 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:33:22.805  INFO [32m[][0;39m 22952 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:33:23.226  INFO [32m[][0;39m 22952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:33:23.234  INFO [32m[][0;39m 22952 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:33:23.428  WARN [33m[][0;39m 22952 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:33:23.430  INFO [32m[][0;39m 22952 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:33:23.430  INFO [32m[][0;39m 22952 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 623 ms
+2023-04-03 17:33:23.586  INFO [32m[][0;39m 22952 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:33:23.593  INFO [32m[][0;39m 22952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-04-03 17:33:24.370  INFO [32m[][0;39m 22952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-04-03 17:33:24.371  INFO [32m[][0;39m 22952 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:33:25.222  INFO [32m[][0;39m 22952 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:33:25.222  INFO [32m[][0;39m 22952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:33:25.434  WARN [33m[][0;39m 22952 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:33:25.434  WARN [33m[][0;39m 22952 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:33:25.599  WARN [33m[][0;39m 22952 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:33:26.049  INFO [32m[][0;39m 22952 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:33:26.055  INFO [32m[][0;39m 22952 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:33:26.079  INFO [32m[][0;39m 22952 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:33:26.093  INFO [32m[][0;39m 22952 --- [restartedMain] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:33:26.093  WARN [33m[][0;39m 22952 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2023-04-03 17:33:26.094  INFO [32m[][0;39m 22952 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:33:26.095  INFO [32m[][0;39m 22952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2023-04-03 17:33:26.134  INFO [32m[][0;39m 22952 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2023-04-03 17:33:26.141  INFO [32m[][0;39m 22952 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-03 17:33:26.142 ERROR [31m[][0;39m 22952 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2023-04-03 17:35:26.025  INFO [32m[][0;39m 17032 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.5.Final
+2023-04-03 17:35:26.026  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:35:26.028  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:35:26.078  INFO [32m[][0;39m 17032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-03 17:35:26.078  INFO [32m[][0;39m 17032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-03 17:35:27.084  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:35:27.108  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:35:27.755  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:35:27.769  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:35:27.769  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1690 ms
+2023-04-03 17:35:28.041  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:35:28.077  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-03 17:35:28.196  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 17:35:28.294  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-03 17:35:29.245  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-03 17:35:29.254  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:35:29.899  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:35:29.909  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:35:30.279  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:35:30.283  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:35:30.555  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:35:31.201  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:35:31.207  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:35:31.252  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:35:31.257  INFO [32m[][0;39m 17032 --- [restartedMain] org.xnio                                 : XNIO version 3.8.7.Final
+2023-04-03 17:35:31.262  INFO [32m[][0;39m 17032 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2023-04-03 17:35:31.289  INFO [32m[][0;39m 17032 --- [restartedMain] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2023-04-03 17:35:31.320  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:35:31.335  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 5.971 seconds (JVM running for 7.214)
+2023-04-03 17:35:31.997  INFO [32m[][0;39m 17032 --- [RMI TCP Connection(5)-172.17.96.151] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 17:35:31.997  INFO [32m[][0;39m 17032 --- [RMI TCP Connection(5)-172.17.96.151] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03 17:35:31.999  INFO [32m[][0;39m 17032 --- [RMI TCP Connection(5)-172.17.96.151] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-03 17:41:21.682  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-03 17:41:21.688  INFO [32m[][0;39m 17032 --- [Thread-5] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:41:21.700  INFO [32m[][0;39m 17032 --- [Thread-5] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-03 17:41:21.711  INFO [32m[][0;39m 17032 --- [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:41:21.718  INFO [32m[][0;39m 17032 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-03 17:41:21.736  INFO [32m[][0;39m 17032 --- [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-04-03 17:41:21.868  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:41:21.869  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:41:22.337  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:41:22.345  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:41:22.518  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:41:22.520  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:41:22.520  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 648 ms
+2023-04-03 17:41:22.639  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:41:22.646  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2023-04-03 17:41:29.419  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2023-04-03 17:41:29.419  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:41:30.055  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:41:30.056  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:41:30.235  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:41:30.235  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:41:30.309  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:41:30.592  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:41:30.596  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:41:30.616  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:41:30.639  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:41:30.646  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 8.824 seconds (JVM running for 366.525)
+2023-04-03 17:41:30.648  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:41:32.014  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-03 17:41:32.017  INFO [32m[][0;39m 17032 --- [Thread-7] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:41:32.021  INFO [32m[][0;39m 17032 --- [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:41:32.022  INFO [32m[][0;39m 17032 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2023-04-03 17:41:32.117  INFO [32m[][0;39m 17032 --- [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2023-04-03 17:41:32.201  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:41:32.201  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:41:32.501  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:41:32.509  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:41:32.703  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:41:32.705  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:41:32.705  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 502 ms
+2023-04-03 17:41:32.840  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:41:32.855  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2023-04-03 17:41:33.265  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2023-04-03 17:41:33.265  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:41:33.604  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:41:33.604  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:41:33.760  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:41:33.760  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:41:33.871  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:41:34.253  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:41:34.257  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:41:34.277  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:41:34.291  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:41:34.297  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 2.127 seconds (JVM running for 370.176)
+2023-04-03 17:41:34.299  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:42:50.965  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-03 17:42:50.970  INFO [32m[][0;39m 17032 --- [Thread-11] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:42:50.979  INFO [32m[][0;39m 17032 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:42:50.981  INFO [32m[][0;39m 17032 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2023-04-03 17:42:50.991  INFO [32m[][0;39m 17032 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2023-04-03 17:42:51.095  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:42:51.095  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:42:51.555  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:42:51.565  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:42:51.713  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:42:51.714  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:42:51.714  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 616 ms
+2023-04-03 17:42:51.833  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:42:51.840  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2023-04-03 17:42:52.278  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2023-04-03 17:42:52.278  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:42:52.770  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:42:52.771  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:42:52.986  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:42:52.986  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:42:53.066  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:42:53.401  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:42:53.406  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:42:53.430  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:42:53.440  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:42:53.447  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 2.388 seconds (JVM running for 449.325)
+2023-04-03 17:42:53.449  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:42:54.835  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-03 17:42:54.838  INFO [32m[][0;39m 17032 --- [Thread-15] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:42:54.844  INFO [32m[][0;39m 17032 --- [Thread-15] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:42:54.846  INFO [32m[][0;39m 17032 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2023-04-03 17:42:55.155  INFO [32m[][0;39m 17032 --- [Thread-15] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2023-04-03 17:42:55.238  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:42:55.239  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:42:55.534  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:42:55.542  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:42:55.682  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:42:55.683  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:42:55.684  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 443 ms
+2023-04-03 17:42:55.870  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:42:55.878  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2023-04-03 17:42:56.293  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2023-04-03 17:42:56.294  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:42:56.661  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:42:56.662  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:42:56.821  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:42:56.821  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:42:56.931  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:42:57.296  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:42:57.301  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:42:57.325  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:42:57.338  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:42:57.345  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 2.131 seconds (JVM running for 453.224)
+2023-04-03 17:42:57.347  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:43:01.739  INFO [32m[][0;39m 17032 --- [XNIO-5 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 17:43:01.739  INFO [32m[][0;39m 17032 --- [XNIO-5 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03 17:43:01.742  INFO [32m[][0;39m 17032 --- [XNIO-5 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-03 17:43:01.756  INFO [32m[][0;39m 17032 --- [XNIO-5 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = d603a2c2-2431-4949-8256-a46cf9adb83c
+2023-04-03 17:43:01.756  INFO [32m[][0;39m 17032 --- [XNIO-5 task-1] com.demo.interceptor.MDCInterceptor      : requestId = d603a2c2-2431-4949-8256-a46cf9adb83c , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:43:01.873  WARN [33m[][0;39m 17032 --- [XNIO-5 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:43:08.052  INFO [32m[][0;39m 17032 --- [XNIO-5 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = b44ba656-9d77-4558-9156-82c598cac186
+2023-04-03 17:43:08.052  INFO [32m[][0;39m 17032 --- [XNIO-5 task-1] com.demo.interceptor.MDCInterceptor      : requestId = b44ba656-9d77-4558-9156-82c598cac186 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:43:08.054  WARN [33m[][0;39m 17032 --- [XNIO-5 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:43:37.411  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-03 17:43:37.413  INFO [32m[][0;39m 17032 --- [Thread-19] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:43:37.417  INFO [32m[][0;39m 17032 --- [Thread-19] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-03 17:43:37.420  INFO [32m[][0;39m 17032 --- [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:43:37.421  INFO [32m[][0;39m 17032 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2023-04-03 17:43:37.434  INFO [32m[][0;39m 17032 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2023-04-03 17:43:37.541  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:43:37.542  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:43:38.092  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:43:38.100  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:43:38.337  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:43:38.339  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:43:38.339  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 794 ms
+2023-04-03 17:43:38.490  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:43:38.500  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2023-04-03 17:43:39.597  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2023-04-03 17:43:39.597  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:43:41.241  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:43:41.241  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:43:41.443  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:43:41.443  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:43:41.543  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:43:41.869  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:43:41.873  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:43:41.892  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:43:41.901  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:43:41.906  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 4.402 seconds (JVM running for 497.785)
+2023-04-03 17:43:41.908  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:43:42.268  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 17:43:42.268  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03 17:43:42.269  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-03 17:43:42.272  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 2f9d2d13-8be3-4999-a62b-953f2c11e3ff
+2023-04-03 17:43:42.272  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 2f9d2d13-8be3-4999-a62b-953f2c11e3ff , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:43:42.285  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录结束，requestId = 2f9d2d13-8be3-4999-a62b-953f2c11e3ff
+2023-04-03 17:43:42.288  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 2bc10324-5f7c-4e7c-9e51-99c55c5c33ba
+2023-04-03 17:43:42.288  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 2bc10324-5f7c-4e7c-9e51-99c55c5c33ba , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:43:42.298  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录结束，requestId = 2bc10324-5f7c-4e7c-9e51-99c55c5c33ba
+2023-04-03 17:43:43.287  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 9ed7897e-9a44-4051-9ed9-03158cbd18a2
+2023-04-03 17:43:43.287  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 9ed7897e-9a44-4051-9ed9-03158cbd18a2 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:43:43.289  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录结束，requestId = 9ed7897e-9a44-4051-9ed9-03158cbd18a2
+2023-04-03 17:43:43.290  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-03 17:43:43.292  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = d4e959c2-44bc-4706-9190-3ea184048917
+2023-04-03 17:43:43.292  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : requestId = d4e959c2-44bc-4706-9190-3ea184048917 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:43:43.294  INFO [32m[][0;39m 17032 --- [Thread-23] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:43:43.294  INFO [32m[][0;39m 17032 --- [XNIO-6 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录结束，requestId = d4e959c2-44bc-4706-9190-3ea184048917
+2023-04-03 17:43:43.299  INFO [32m[][0;39m 17032 --- [Thread-23] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-03 17:43:43.302  INFO [32m[][0;39m 17032 --- [Thread-23] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:43:43.304  INFO [32m[][0;39m 17032 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2023-04-03 17:43:43.878  INFO [32m[][0;39m 17032 --- [Thread-23] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2023-04-03 17:43:43.976  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:43:43.977  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:43:44.342  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:43:44.349  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:43:44.490  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:43:44.491  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:43:44.491  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 512 ms
+2023-04-03 17:43:44.599  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:43:44.607  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2023-04-03 17:43:45.003  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2023-04-03 17:43:45.003  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:43:46.257  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:43:46.257  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:43:46.435  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:43:46.435  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:43:46.535  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:43:46.852  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:43:46.857  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:43:46.878  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:43:46.887  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:43:46.893  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 2.947 seconds (JVM running for 502.772)
+2023-04-03 17:43:46.894  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:43:50.577  INFO [32m[][0;39m 17032 --- [XNIO-7 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 17:43:50.578  INFO [32m[][0;39m 17032 --- [XNIO-7 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03 17:43:50.580  INFO [32m[][0;39m 17032 --- [XNIO-7 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-03 17:43:50.581  INFO [32m[][0;39m 17032 --- [XNIO-7 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = a091c385-abd6-40b4-a1f4-2f81e633a474
+2023-04-03 17:43:50.582  INFO [32m[][0;39m 17032 --- [XNIO-7 task-1] com.demo.interceptor.MDCInterceptor      : requestId = a091c385-abd6-40b4-a1f4-2f81e633a474 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:43:50.599  WARN [33m[][0;39m 17032 --- [XNIO-7 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:44:07.251  INFO [32m[][0;39m 17032 --- [XNIO-7 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = d8ce7563-bceb-4284-9c5d-7dde37abc525
+2023-04-03 17:44:07.251  INFO [32m[][0;39m 17032 --- [XNIO-7 task-1] com.demo.interceptor.MDCInterceptor      : requestId = d8ce7563-bceb-4284-9c5d-7dde37abc525 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:44:07.253  WARN [33m[][0;39m 17032 --- [XNIO-7 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:44:15.366  INFO [32m[][0;39m 17032 --- [XNIO-7 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = f28c3029-9a6e-4d59-95d0-209eba7ed386
+2023-04-03 17:44:15.366  INFO [32m[][0;39m 17032 --- [XNIO-7 task-1] com.demo.interceptor.MDCInterceptor      : requestId = f28c3029-9a6e-4d59-95d0-209eba7ed386 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:44:15.367  WARN [33m[][0;39m 17032 --- [XNIO-7 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:44:32.088  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-03 17:44:32.090  INFO [32m[][0;39m 17032 --- [Thread-27] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:44:32.094  INFO [32m[][0;39m 17032 --- [Thread-27] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-03 17:44:32.096  INFO [32m[][0;39m 17032 --- [Thread-27] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:44:32.098  INFO [32m[][0;39m 17032 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2023-04-03 17:44:32.110  INFO [32m[][0;39m 17032 --- [Thread-27] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2023-04-03 17:44:32.235  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:44:32.236  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:44:32.666  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:44:32.674  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:44:32.817  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:44:32.818  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:44:32.818  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 579 ms
+2023-04-03 17:44:32.931  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:44:32.937  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2023-04-03 17:44:33.477  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2023-04-03 17:44:33.478  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:44:33.970  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:44:33.970  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:44:34.141  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:44:34.141  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:44:34.252  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:44:34.538  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:44:34.541  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:44:34.560  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:44:34.567  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:44:34.573  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 2.371 seconds (JVM running for 550.452)
+2023-04-03 17:44:34.575  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:44:35.970  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-03 17:44:35.972  INFO [32m[][0;39m 17032 --- [Thread-31] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:44:35.977  INFO [32m[][0;39m 17032 --- [Thread-31] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:44:35.978  INFO [32m[][0;39m 17032 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2023-04-03 17:44:36.004  INFO [32m[][0;39m 17032 --- [Thread-31] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2023-04-03 17:44:36.094  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:44:36.094  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:44:36.388  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:44:36.394  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:44:36.509  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:44:36.510  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:44:36.510  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 414 ms
+2023-04-03 17:44:36.626  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:44:36.633  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2023-04-03 17:44:37.297  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2023-04-03 17:44:37.297  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:44:37.656  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:44:37.656  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:44:37.810  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:44:37.810  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:44:37.896  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:44:38.194  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:44:38.197  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:44:38.216  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:44:38.240  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:44:38.249  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 2.177 seconds (JVM running for 554.128)
+2023-04-03 17:44:38.251  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:44:42.508  INFO [32m[][0;39m 17032 --- [XNIO-9 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 17:44:42.509  INFO [32m[][0;39m 17032 --- [XNIO-9 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03 17:44:42.510  INFO [32m[][0;39m 17032 --- [XNIO-9 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-03 17:44:42.511  INFO [32m[][0;39m 17032 --- [XNIO-9 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 78d2dc3d-f533-4dff-b99b-2a3ac254951f
+2023-04-03 17:44:42.511  INFO [32m[][0;39m 17032 --- [XNIO-9 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 78d2dc3d-f533-4dff-b99b-2a3ac254951f , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:44:42.526  WARN [33m[][0;39m 17032 --- [XNIO-9 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:44:58.979  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-03 17:44:58.981  INFO [32m[][0;39m 17032 --- [Thread-35] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:44:58.985  INFO [32m[][0;39m 17032 --- [Thread-35] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-03 17:44:58.987  INFO [32m[][0;39m 17032 --- [Thread-35] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:44:58.989  INFO [32m[][0;39m 17032 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2023-04-03 17:44:59.004  INFO [32m[][0;39m 17032 --- [Thread-35] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2023-04-03 17:44:59.146  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:44:59.147  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:44:59.826  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:44:59.839  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:45:00.075  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:45:00.076  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:45:00.076  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 926 ms
+2023-04-03 17:45:00.176  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:45:00.185  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2023-04-03 17:45:01.844  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2023-04-03 17:45:01.844  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:45:02.326  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:45:02.326  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:45:02.528  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:45:02.529  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:45:02.670  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:45:03.304  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:45:03.313  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:45:03.351  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:45:03.373  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:45:03.381  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 4.275 seconds (JVM running for 579.26)
+2023-04-03 17:45:03.384  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:45:04.734  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-03 17:45:04.737  INFO [32m[][0;39m 17032 --- [Thread-39] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:45:04.743  INFO [32m[][0;39m 17032 --- [Thread-39] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:45:04.745  INFO [32m[][0;39m 17032 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2023-04-03 17:45:04.911  INFO [32m[][0;39m 17032 --- [Thread-39] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2023-04-03 17:45:05.058  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:45:05.058  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:45:05.471  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:45:05.478  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:45:05.705  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:45:05.706  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:45:05.706  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 645 ms
+2023-04-03 17:45:05.838  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:45:05.851  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2023-04-03 17:45:08.231  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2023-04-03 17:45:08.232  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:45:09.155  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:45:09.156  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:45:09.342  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:45:09.343  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:45:09.482  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:45:09.783  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:45:09.787  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:45:09.807  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:45:09.815  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:45:09.821  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 4.81 seconds (JVM running for 585.7)
+2023-04-03 17:45:09.822  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:45:16.799  INFO [32m[][0;39m 17032 --- [XNIO-11 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 17:45:16.799  INFO [32m[][0;39m 17032 --- [XNIO-11 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03 17:45:16.800  INFO [32m[][0;39m 17032 --- [XNIO-11 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-03 17:45:16.800  INFO [32m[][0;39m 17032 --- [XNIO-11 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 8e8fd57a-cd3f-4b63-9d3b-8e87eb67845c
+2023-04-03 17:45:16.800  INFO [32m[][0;39m 17032 --- [XNIO-11 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 8e8fd57a-cd3f-4b63-9d3b-8e87eb67845c , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:45:16.814  WARN [33m[][0;39m 17032 --- [XNIO-11 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:45:30.112  INFO [32m[][0;39m 17032 --- [XNIO-11 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 4cb463f9-53c9-47c8-8afb-4d6fb12a98fa
+2023-04-03 17:45:30.112  INFO [32m[][0;39m 17032 --- [XNIO-11 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 4cb463f9-53c9-47c8-8afb-4d6fb12a98fa , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:45:30.114  WARN [33m[][0;39m 17032 --- [XNIO-11 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:48:28.996  INFO [32m[][0;39m 17032 --- [XNIO-11 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = ccd376a8-ee19-41ee-b72c-66bbb4c9e3b2
+2023-04-03 17:48:28.996  INFO [32m[][0;39m 17032 --- [XNIO-11 task-1] com.demo.interceptor.MDCInterceptor      : requestId = ccd376a8-ee19-41ee-b72c-66bbb4c9e3b2 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:48:28.998  WARN [33m[][0;39m 17032 --- [XNIO-11 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:48:42.291  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-03 17:48:42.293  INFO [32m[][0;39m 17032 --- [Thread-43] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:48:42.296  INFO [32m[][0;39m 17032 --- [Thread-43] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-03 17:48:42.299  INFO [32m[][0;39m 17032 --- [Thread-43] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:48:42.300  INFO [32m[][0;39m 17032 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2023-04-03 17:48:42.310  INFO [32m[][0;39m 17032 --- [Thread-43] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2023-04-03 17:48:42.443  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:48:42.443  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:48:42.913  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:48:42.923  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:48:43.137  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:48:43.139  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:48:43.139  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 692 ms
+2023-04-03 17:48:43.309  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:48:43.318  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2023-04-03 17:48:43.753  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2023-04-03 17:48:43.753  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:48:44.249  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:48:44.249  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:48:44.479  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:48:44.479  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:48:44.561  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:48:44.987  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:48:44.993  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:48:45.024  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:48:45.039  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:48:45.047  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 2.643 seconds (JVM running for 800.927)
+2023-04-03 17:48:45.050  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:48:46.413  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-03 17:48:46.415  INFO [32m[][0;39m 17032 --- [Thread-47] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:48:46.421  INFO [32m[][0;39m 17032 --- [Thread-47] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:48:46.422  INFO [32m[][0;39m 17032 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2023-04-03 17:48:46.535  INFO [32m[][0;39m 17032 --- [Thread-47] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2023-04-03 17:48:46.665  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:48:46.666  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:48:47.003  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:48:47.010  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:48:47.162  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:48:47.163  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:48:47.163  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 495 ms
+2023-04-03 17:48:47.292  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:48:47.298  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2023-04-03 17:48:47.945  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2023-04-03 17:48:47.946  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:48:48.885  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:48:48.886  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:48:49.048  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:48:49.048  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:48:49.137  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:48:49.464  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:48:49.467  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:48:49.490  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:48:49.497  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:48:49.504  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 2.868 seconds (JVM running for 805.383)
+2023-04-03 17:48:49.506  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:48:52.543  INFO [32m[][0;39m 17032 --- [XNIO-13 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 17:48:52.543  INFO [32m[][0;39m 17032 --- [XNIO-13 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03 17:48:52.545  INFO [32m[][0;39m 17032 --- [XNIO-13 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-03 17:48:52.546  INFO [32m[][0;39m 17032 --- [XNIO-13 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 407191b6-eb40-4321-bb51-e42b6194d7c5
+2023-04-03 17:48:52.546  INFO [32m[][0;39m 17032 --- [XNIO-13 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 407191b6-eb40-4321-bb51-e42b6194d7c5 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:48:52.563  WARN [33m[][0;39m 17032 --- [XNIO-13 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:48:55.911  INFO [32m[][0;39m 17032 --- [XNIO-13 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 104268b0-d51c-4d21-8e0b-1b34aa3dbc9d
+2023-04-03 17:48:55.911  INFO [32m[][0;39m 17032 --- [XNIO-13 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 104268b0-d51c-4d21-8e0b-1b34aa3dbc9d , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:48:55.914  WARN [33m[][0;39m 17032 --- [XNIO-13 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:49:42.874  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-03 17:49:42.876  INFO [32m[][0;39m 17032 --- [Thread-51] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:49:42.880  INFO [32m[][0;39m 17032 --- [Thread-51] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-03 17:49:42.882  INFO [32m[][0;39m 17032 --- [Thread-51] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:49:42.884  INFO [32m[][0;39m 17032 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2023-04-03 17:49:42.898  INFO [32m[][0;39m 17032 --- [Thread-51] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2023-04-03 17:49:43.033  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:49:43.033  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:49:43.462  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:49:43.473  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:49:43.601  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:49:43.602  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:49:43.602  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 566 ms
+2023-04-03 17:49:43.723  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:49:43.730  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2023-04-03 17:49:44.596  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2023-04-03 17:49:44.597  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:49:46.161  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:49:46.161  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:49:46.334  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:49:46.334  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:49:46.403  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:49:46.680  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:49:46.683  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:49:46.701  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:49:46.712  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:49:46.718  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 3.717 seconds (JVM running for 862.597)
+2023-04-03 17:49:46.719  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:49:48.107  INFO [32m[][0;39m 17032 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-03 17:49:48.109  INFO [32m[][0;39m 17032 --- [Thread-55] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:49:48.114  INFO [32m[][0;39m 17032 --- [Thread-55] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:49:48.115  INFO [32m[][0;39m 17032 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2023-04-03 17:49:49.492  INFO [32m[][0;39m 17032 --- [Thread-55] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2023-04-03 17:49:49.611  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 17032 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:49:49.611  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:49:49.935  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:49:49.942  INFO [32m[][0;39m 17032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:49:50.060  WARN [33m[][0;39m 17032 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:49:50.061  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:49:50.062  INFO [32m[][0;39m 17032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 449 ms
+2023-04-03 17:49:50.164  INFO [32m[][0;39m 17032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:49:50.171  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2023-04-03 17:49:50.642  INFO [32m[][0;39m 17032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2023-04-03 17:49:50.643  INFO [32m[][0;39m 17032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:49:51.401  INFO [32m[][0;39m 17032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:49:51.401  INFO [32m[][0;39m 17032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:49:51.556  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:49:51.557  WARN [33m[][0;39m 17032 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:49:51.660  WARN [33m[][0;39m 17032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:49:51.954  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:49:51.958  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:49:51.977  INFO [32m[][0;39m 17032 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:49:51.985  INFO [32m[][0;39m 17032 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:49:51.991  INFO [32m[][0;39m 17032 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 2.403 seconds (JVM running for 867.869)
+2023-04-03 17:49:51.993  INFO [32m[][0;39m 17032 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-03 17:50:07.892  INFO [32m[][0;39m 17032 --- [XNIO-15 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 17:50:07.893  INFO [32m[][0;39m 17032 --- [XNIO-15 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03 17:50:07.894  INFO [32m[][0;39m 17032 --- [XNIO-15 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-03 17:50:07.898  INFO [32m[][0;39m 17032 --- [XNIO-15 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = aff24b83-5081-41d8-a795-5b54ccf236f6
+2023-04-03 17:50:07.898  INFO [32m[][0;39m 17032 --- [XNIO-15 task-1] com.demo.interceptor.MDCInterceptor      : requestId = aff24b83-5081-41d8-a795-5b54ccf236f6 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:50:07.915  WARN [33m[][0;39m 17032 --- [XNIO-15 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:50:10.219  INFO [32m[][0;39m 17032 --- [XNIO-15 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 75e9c5fd-03a7-4c82-abf2-3c03a6960d22
+2023-04-03 17:50:10.219  INFO [32m[][0;39m 17032 --- [XNIO-15 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 75e9c5fd-03a7-4c82-abf2-3c03a6960d22 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:50:10.220  WARN [33m[][0;39m 17032 --- [XNIO-15 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:50:25.740  INFO [32m[][0;39m 17032 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:50:25.743  INFO [32m[][0;39m 17032 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-03 17:50:25.746  INFO [32m[][0;39m 17032 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:50:25.747  INFO [32m[][0;39m 17032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2023-04-03 17:50:25.755  INFO [32m[][0;39m 17032 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2023-04-03 17:50:30.504  INFO [32m[][0;39m 23052 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.5.Final
+2023-04-03 17:50:30.505  INFO [32m[][0;39m 23052 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 23052 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-03 17:50:30.506  INFO [32m[][0;39m 23052 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-03 17:50:30.545  INFO [32m[][0;39m 23052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-03 17:50:30.545  INFO [32m[][0;39m 23052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-03 17:50:31.412  INFO [32m[][0;39m 23052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-03 17:50:31.432  INFO [32m[][0;39m 23052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 JPA repository interfaces.
+2023-04-03 17:50:32.101  WARN [33m[][0;39m 23052 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-03 17:50:32.123  INFO [32m[][0;39m 23052 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-03 17:50:32.123  INFO [32m[][0;39m 23052 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1577 ms
+2023-04-03 17:50:32.447  INFO [32m[][0;39m 23052 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-04-03 17:50:32.491  INFO [32m[][0;39m 23052 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-04-03 17:50:32.653  INFO [32m[][0;39m 23052 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-04-03 17:50:32.766  INFO [32m[][0;39m 23052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-04-03 17:50:33.638  INFO [32m[][0;39m 23052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-04-03 17:50:33.652  INFO [32m[][0;39m 23052 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2023-04-03 17:50:34.491  INFO [32m[][0;39m 23052 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-04-03 17:50:34.503  INFO [32m[][0;39m 23052 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:50:34.911  WARN [33m[][0;39m 23052 --- [restartedMain] c.b.m.core.metadata.TableInfoHelper      : Can not find table primary key in Class: "com.demo.domain.Customers".
+2023-04-03 17:50:34.915  WARN [33m[][0;39m 23052 --- [restartedMain] c.b.m.core.injector.DefaultSqlInjector   : class com.demo.domain.Customers ,Not found @TableId annotation, Cannot use Mybatis-Plus 'xxById' Method.
+2023-04-03 17:50:35.189  WARN [33m[][0;39m 23052 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-03 17:50:36.034  INFO [32m[][0;39m 23052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-03 17:50:36.044  INFO [32m[][0;39m 23052 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2023-04-03 17:50:36.113  INFO [32m[][0;39m 23052 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-03 17:50:36.121  INFO [32m[][0;39m 23052 --- [restartedMain] org.xnio                                 : XNIO version 3.8.7.Final
+2023-04-03 17:50:36.128  INFO [32m[][0;39m 23052 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2023-04-03 17:50:36.174  INFO [32m[][0;39m 23052 --- [restartedMain] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2023-04-03 17:50:36.227  INFO [32m[][0;39m 23052 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-03 17:50:36.245  INFO [32m[][0;39m 23052 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 6.21 seconds (JVM running for 7.19)
+2023-04-03 17:50:36.603  INFO [32m[][0;39m 23052 --- [RMI TCP Connection(2)-172.17.96.151] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-03 17:50:36.603  INFO [32m[][0;39m 23052 --- [RMI TCP Connection(2)-172.17.96.151] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-03 17:50:36.605  INFO [32m[][0;39m 23052 --- [RMI TCP Connection(2)-172.17.96.151] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-03 17:51:22.507  INFO [32m[][0;39m 23052 --- [XNIO-1 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 095f1f58-9857-4292-a2d4-cb3060adbebb
+2023-04-03 17:51:22.507  INFO [32m[][0;39m 23052 --- [XNIO-1 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 095f1f58-9857-4292-a2d4-cb3060adbebb , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:51:22.664  WARN [33m[][0;39m 23052 --- [XNIO-1 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:51:42.065  INFO [32m[][0;39m 23052 --- [XNIO-1 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 323b4307-7553-4c56-b476-200c72933aac
+2023-04-03 17:51:42.065  INFO [32m[][0;39m 23052 --- [XNIO-1 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 323b4307-7553-4c56-b476-200c72933aac , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:51:42.067  WARN [33m[][0;39m 23052 --- [XNIO-1 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:52:51.464  INFO [32m[][0;39m 23052 --- [XNIO-1 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = aa0962fe-9411-4d82-9e02-e4291c1e2834
+2023-04-03 17:52:51.464  INFO [32m[][0;39m 23052 --- [XNIO-1 task-1] com.demo.interceptor.MDCInterceptor      : requestId = aa0962fe-9411-4d82-9e02-e4291c1e2834 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
+2023-04-03 17:52:51.466  WARN [33m[][0;39m 23052 --- [XNIO-1 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): com.demo.mapper.CustomersMapper.deleteById]
+2023-04-03 17:54:13.951  INFO [32m[][0;39m 23052 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-03 17:54:13.956  INFO [32m[][0;39m 23052 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-03 17:54:13.963  INFO [32m[][0;39m 23052 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-03 17:54:13.967  INFO [32m[][0;39m 23052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-04-03 17:54:13.982  INFO [32m[][0;39m 23052 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

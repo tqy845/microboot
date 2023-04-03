@@ -115,6 +115,8 @@ project('microboot-web') { // 子模块
         implementation libraries.'itextpdf'
         implementation libraries.'easypoi'
         implementation libraries.'hibernate'
+        implementation libraries.'mybatis'
+
     }
 }
 project('microboot-common') { // 子模块
@@ -126,6 +128,8 @@ project('microboot-common') { // 子模块
 //        compile('org.springframework.boot:spring-boot-starter-jetty')
         // undertow是一个天生支持高并发的容器，可以轻松抗下10w+并发，然后是通过程序对其进行控制
         api 'org.springframework.boot:spring-boot-starter-undertow'
+        implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+        implementation libraries.'mysql'
     } // 配置子模块依赖
 }
 

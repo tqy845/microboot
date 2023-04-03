@@ -1,5 +1,6 @@
 package com.demo.action;
 
+import com.demo.commond.validation.annotation.WrapResponse;
 import com.demo.service.IMessageService;
 import com.demo.vo.Message;
 import lombok.extern.slf4j.Slf4j;
@@ -16,6 +17,7 @@ import javax.validation.constraints.NotNull;
 @RequestMapping("/message/*") // 添加父路径
 @Validated
 @Slf4j
+@WrapResponse
 public class MessageAction { // 控制层的实现类
 //    private static final Logger LOGGER = LoggerFactory.getLogger(MessageAction.class); // 获取日志实例
 
@@ -23,7 +25,7 @@ public class MessageAction { // 控制层的实现类
     private IMessageService messageService;
 
     @RequestMapping("echo") // 子路径
-    public String echo(@Valid Message message) { // 进行请求参数的接收以及请求内容的回应
+    public Object echo(@Valid Message message) { // 进行请求参数的接收以及请求内容的回应
         log.info("接收msg的请求参数，内容为：{}", message); // SLF4j可以直接使用占位符
         log.error("接收msg的请求参数，内容为：{}", message); // SLF4j可以直接使用占位符
         log.warn("接收msg的请求参数，内容为：{}", message); // SLF4j可以直接使用占位符

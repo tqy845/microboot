@@ -4,6 +4,7 @@ server:
     context-parameters: # 启动初始化参数s
       teacher: Emma
 
+
 spring:
   messages:
     basename: i18n/Message
@@ -30,20 +31,28 @@ spring:
     port: 465
     test-connection: false
     protocol: smtps
+  datasource:
+    url: jdbc:mysql://www.tqy.pub:3306/car_sale
+    username: car_sale
+    password: MjfaamhZpyhX7DrA
+    driver-class-name: com.mysql.cj.jdbc.Driver
 
-management:
-  server:
-    port: 9090
-  endpoint:
-    health:
-      show-details: always  # 显示异常信息
-      show-components: always # 显示组件信息
-    shutdown:
-      enabled: true # 允许远程关闭
-  endpoints:
-    web:
-      exposure:
-        include: "*" # 开启所有监控
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: mysql
+#  server:
+#    port: 9090
+#  endpoint:
+#    health:
+#      show-details: always  # 显示异常信息
+#      show-components: always # 显示组件信息
+#    shutdown:
+#      enabled: true # 允许远程关闭
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*" # 开启所有监控
 logging:
   level: # 需要配置一个Map集合
     root: info # 基本的日志级别
@@ -53,3 +62,6 @@ logging:
 #  pattern:
 #    file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%logger] %msg%n" # 文件日志格式
 #    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level [%logger] %msg%n" # 控制台日志格式
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: false

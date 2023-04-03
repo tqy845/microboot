@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 public class MessageServiceImpl implements IMessageService {
 
     @Override
-    public String echo(Message msg) {
-        return "【ECHO】" + msg;
+    public Object echo(Message msg) {
+        return msg;
     }
 }

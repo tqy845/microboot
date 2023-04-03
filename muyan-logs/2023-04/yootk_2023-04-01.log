@@ -1,0 +1,221 @@
+2023-04-01 15:46:35.602  INFO [32m[][0;39m 24396 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 24396 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-01 15:46:35.605  INFO [32m[][0;39m 24396 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-01 15:46:35.614  INFO [32m[][0;39m 24396 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.5.Final
+2023-04-01 15:46:35.685  INFO [32m[][0;39m 24396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-01 15:46:35.686  INFO [32m[][0;39m 24396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-01 15:46:37.531  WARN [33m[][0;39m 24396 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-01 15:46:37.554  INFO [32m[][0;39m 24396 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:46:37.554  INFO [32m[][0;39m 24396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1867 ms
+2023-04-01 15:46:38.829  INFO [32m[][0;39m 24396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-01 15:46:38.869  INFO [32m[][0;39m 24396 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:46:38.875  INFO [32m[][0;39m 24396 --- [restartedMain] org.xnio                                 : XNIO version 3.8.7.Final
+2023-04-01 15:46:38.880  INFO [32m[][0;39m 24396 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2023-04-01 15:46:38.912  INFO [32m[][0;39m 24396 --- [restartedMain] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2023-04-01 15:46:38.953  INFO [32m[][0;39m 24396 --- [restartedMain] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:46:38.957  WARN [33m[][0;39m 24396 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 80 is already in use
+2023-04-01 15:46:38.972  INFO [32m[][0;39m 24396 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-04-01 15:46:38.996 ERROR [31m[][0;39m 24396 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 80 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 80 or configure this application to listen on another port.
+
+2023-04-01 15:47:41.172  INFO [32m[][0;39m 23080 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.5.Final
+2023-04-01 15:47:41.174  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 23080 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-01 15:47:41.176  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-01 15:47:41.233  INFO [32m[][0;39m 23080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-01 15:47:41.234  INFO [32m[][0;39m 23080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-01 15:47:42.531  WARN [33m[][0;39m 23080 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-01 15:47:42.548  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:47:42.549  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1315 ms
+2023-04-01 15:47:43.515  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-01 15:47:43.546  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:47:43.551  INFO [32m[][0;39m 23080 --- [restartedMain] org.xnio                                 : XNIO version 3.8.7.Final
+2023-04-01 15:47:43.555  INFO [32m[][0;39m 23080 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2023-04-01 15:47:43.583  INFO [32m[][0;39m 23080 --- [restartedMain] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2023-04-01 15:47:43.660  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-01 15:47:43.798  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:47:43.798  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 130 ms
+2023-04-01 15:47:43.807  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-01 15:47:43.844  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:47:43.854  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 9090 (http)
+2023-04-01 15:47:43.868  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 3.18 seconds (JVM running for 4.047)
+2023-04-01 15:47:44.606  INFO [32m[][0;39m 23080 --- [RMI TCP Connection(3)-172.17.96.43] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-01 15:47:44.606  INFO [32m[][0;39m 23080 --- [RMI TCP Connection(3)-172.17.96.43] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-01 15:47:44.608  INFO [32m[][0;39m 23080 --- [RMI TCP Connection(3)-172.17.96.43] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2023-04-01 15:47:50.087  INFO [32m[][0;39m 23080 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-04-01 15:47:50.091  INFO [32m[][0;39m 23080 --- [Thread-5] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:47:50.109  INFO [32m[][0;39m 23080 --- [Thread-5] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:47:50.118  INFO [32m[][0;39m 23080 --- [Thread-5] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-01 15:47:50.275  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 23080 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-01 15:47:50.276  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-01 15:47:50.854  WARN [33m[][0;39m 23080 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-01 15:47:50.856  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:47:50.856  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 577 ms
+2023-04-01 15:47:51.267  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-01 15:47:51.279  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:47:51.291  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-01 15:47:51.339  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:47:51.339  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 46 ms
+2023-04-01 15:47:51.346  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-01 15:47:51.368  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:47:51.380  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 9090 (http)
+2023-04-01 15:47:51.386  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 1.16 seconds (JVM running for 11.565)
+2023-04-01 15:47:51.388  INFO [32m[][0;39m 23080 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-01 15:48:28.391  INFO [32m[][0;39m 23080 --- [XNIO-3 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-01 15:48:28.394  INFO [32m[][0;39m 23080 --- [XNIO-3 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-01 15:48:28.397  INFO [32m[][0;39m 23080 --- [XNIO-3 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-01 15:50:46.698  WARN [33m[][0;39m 23080 --- [XNIO-3 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.validation.BindException: org.springframework.validation.BeanPropertyBindingResult: 1 errors<EOL>Field error in object 'message' on field 'flag': rejected value [happy]; codes [RegexValidator.message.flag,RegexValidator.flag,RegexValidator.java.lang.String,RegexValidator]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [message.flag,flag]; arguments []; default message [flag],[a-zA-Z]{1,5}-\d{1,3}]; default message ["正则验证有误！"]]
+2023-04-01 15:50:56.065 ERROR [31m[][0;39m 23080 --- [XNIO-3 task-1] com.demo.action.MessageAction            : 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=xxx-111)
+2023-04-01 15:50:56.091  WARN [33m[][0;39m 23080 --- [XNIO-3 task-1] com.demo.action.MessageAction            : 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=xxx-111)
+2023-04-01 15:51:08.224 ERROR [31m[][0;39m 23080 --- [XNIO-3 task-1] com.demo.action.MessageAction            : 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=xxx-111)
+2023-04-01 15:51:08.224  WARN [33m[][0;39m 23080 --- [XNIO-3 task-1] com.demo.action.MessageAction            : 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=xxx-111)
+2023-04-01 15:52:03.090  INFO [32m[][0;39m 23080 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-01 15:52:03.092  INFO [32m[][0;39m 23080 --- [Thread-7] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:52:03.099  INFO [32m[][0;39m 23080 --- [Thread-7] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:52:03.105  INFO [32m[][0;39m 23080 --- [Thread-7] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-01 15:52:03.226  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 23080 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-01 15:52:03.226  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-01 15:52:03.855  WARN [33m[][0;39m 23080 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-01 15:52:03.858  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:52:03.858  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 628 ms
+2023-04-01 15:52:04.451  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-01 15:52:04.471  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:52:04.487  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-01 15:52:04.577  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:52:04.577  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 86 ms
+2023-04-01 15:52:04.590  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-01 15:52:04.626  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:52:04.646  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 9090 (http)
+2023-04-01 15:52:04.655  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 1.484 seconds (JVM running for 264.834)
+2023-04-01 15:52:04.658  INFO [32m[][0;39m 23080 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-01 15:52:05.884  INFO [32m[][0;39m 23080 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-01 15:52:05.888  INFO [32m[][0;39m 23080 --- [Thread-11] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:52:05.894  INFO [32m[][0;39m 23080 --- [Thread-11] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:52:05.994  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 23080 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-01 15:52:05.995  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-01 15:52:06.499  WARN [33m[][0;39m 23080 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-01 15:52:06.501  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:52:06.501  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 504 ms
+2023-04-01 15:52:06.959  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-01 15:52:06.975  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:52:06.992  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-01 15:52:07.060  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:52:07.060  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 64 ms
+2023-04-01 15:52:07.069  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-01 15:52:07.088  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:52:07.096  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 9090 (http)
+2023-04-01 15:52:07.103  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 1.141 seconds (JVM running for 267.282)
+2023-04-01 15:52:07.105  INFO [32m[][0;39m 23080 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-01 15:52:07.144  INFO [32m[][0;39m 23080 --- [XNIO-7 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-01 15:52:07.146  INFO [32m[][0;39m 23080 --- [XNIO-7 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-01 15:52:07.147  INFO [32m[][0;39m 23080 --- [XNIO-7 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-01 15:52:07.169 ERROR [31m[][0;39m 23080 --- [XNIO-7 task-1] com.demo.action.MessageAction            : 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=xxx-111)
+2023-04-01 15:52:07.170  WARN [33m[][0;39m 23080 --- [XNIO-7 task-1] com.demo.action.MessageAction            : 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=xxx-111)
+2023-04-01 15:52:07.179  WARN [33m[][0;39m 23080 --- [XNIO-7 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ClassCastException: class com.demo.vo.ResponseResult cannot be cast to class java.lang.String (com.demo.vo.ResponseResult is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @1961a45d; java.lang.String is in module java.base of loader 'bootstrap')]
+2023-04-01 15:52:58.635  INFO [32m[][0;39m 23080 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-04-01 15:52:58.637  INFO [32m[][0;39m 23080 --- [Thread-15] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:52:58.643  INFO [32m[][0;39m 23080 --- [Thread-15] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:52:58.647  INFO [32m[][0;39m 23080 --- [Thread-15] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-01 15:52:58.772  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 23080 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-01 15:52:58.773  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-01 15:52:59.396  WARN [33m[][0;39m 23080 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-01 15:52:59.398  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:52:59.398  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 622 ms
+2023-04-01 15:52:59.999  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-01 15:53:00.022  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:53:00.039  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-01 15:53:00.159  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:53:00.160  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 117 ms
+2023-04-01 15:53:00.174  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-01 15:53:00.221  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:53:00.250  INFO [32m[][0;39m 23080 --- [XNIO-9 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-01 15:53:00.250  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 9090 (http)
+2023-04-01 15:53:00.252  INFO [32m[][0;39m 23080 --- [XNIO-9 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-01 15:53:00.255  INFO [32m[][0;39m 23080 --- [XNIO-9 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-01 15:53:00.265  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 1.534 seconds (JVM running for 320.444)
+2023-04-01 15:53:00.270  INFO [32m[][0;39m 23080 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-01 15:53:01.430  INFO [32m[][0;39m 23080 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-04-01 15:53:01.432  INFO [32m[][0;39m 23080 --- [Thread-19] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:53:01.437  INFO [32m[][0;39m 23080 --- [Thread-19] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:53:01.441  INFO [32m[][0;39m 23080 --- [Thread-19] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-01 15:53:01.562  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 23080 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-01 15:53:01.562  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-01 15:53:02.107  WARN [33m[][0;39m 23080 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-01 15:53:02.109  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:53:02.109  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 545 ms
+2023-04-01 15:53:02.685  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-01 15:53:02.702  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:53:02.714  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-01 15:53:02.793  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:53:02.793  INFO [32m[][0;39m 23080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 77 ms
+2023-04-01 15:53:02.802  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-01 15:53:02.831  INFO [32m[][0;39m 23080 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:53:02.843  INFO [32m[][0;39m 23080 --- [XNIO-11 task-1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-01 15:53:02.844  INFO [32m[][0;39m 23080 --- [XNIO-11 task-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-01 15:53:02.847  INFO [32m[][0;39m 23080 --- [XNIO-11 task-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-04-01 15:53:02.847  INFO [32m[][0;39m 23080 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 9090 (http)
+2023-04-01 15:53:02.856  INFO [32m[][0;39m 23080 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 1.331 seconds (JVM running for 323.035)
+2023-04-01 15:53:02.859  INFO [32m[][0;39m 23080 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-01 15:53:02.869 ERROR [31m[][0;39m 23080 --- [XNIO-11 task-1] com.demo.action.MessageAction            : 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=xxx-111)
+2023-04-01 15:53:02.870  WARN [33m[][0;39m 23080 --- [XNIO-11 task-1] com.demo.action.MessageAction            : 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=xxx-111)
+2023-04-01 15:53:02.880  WARN [33m[][0;39m 23080 --- [XNIO-11 task-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.ClassCastException: class com.demo.vo.ResponseResult cannot be cast to class java.lang.String (com.demo.vo.ResponseResult is in unnamed module of loader org.springframework.boot.devtools.restart.classloader.RestartClassLoader @4d9a264f; java.lang.String is in module java.base of loader 'bootstrap')]
+2023-04-01 15:53:47.032  INFO [32m[][0;39m 23080 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:53:47.037  INFO [32m[][0;39m 23080 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:53:47.041  INFO [32m[][0;39m 23080 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-01 15:53:53.648  INFO [32m[][0;39m 22780 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 22780 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-01 15:53:53.650  INFO [32m[][0;39m 22780 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-01 15:53:53.651  INFO [32m[][0;39m 22780 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 6.2.5.Final
+2023-04-01 15:53:53.706  INFO [32m[][0;39m 22780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-01 15:53:53.706  INFO [32m[][0;39m 22780 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-04-01 15:53:55.168  WARN [33m[][0;39m 22780 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-01 15:53:55.186  INFO [32m[][0;39m 22780 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:53:55.186  INFO [32m[][0;39m 22780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1479 ms
+2023-04-01 15:53:56.150  INFO [32m[][0;39m 22780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-01 15:53:56.179  INFO [32m[][0;39m 22780 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:53:56.184  INFO [32m[][0;39m 22780 --- [restartedMain] org.xnio                                 : XNIO version 3.8.7.Final
+2023-04-01 15:53:56.189  INFO [32m[][0;39m 22780 --- [restartedMain] org.xnio.nio                             : XNIO NIO Implementation Version 3.8.7.Final
+2023-04-01 15:53:56.221  INFO [32m[][0;39m 22780 --- [restartedMain] org.jboss.threads                        : JBoss Threads version 3.1.0.Final
+2023-04-01 15:53:56.257  INFO [32m[][0;39m 22780 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-01 15:53:56.343  INFO [32m[][0;39m 22780 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:53:56.344  INFO [32m[][0;39m 22780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 83 ms
+2023-04-01 15:53:56.352  INFO [32m[][0;39m 22780 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-01 15:53:56.394  INFO [32m[][0;39m 22780 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:53:56.409  INFO [32m[][0;39m 22780 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 9090 (http)
+2023-04-01 15:53:56.429  INFO [32m[][0;39m 22780 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 3.239 seconds (JVM running for 4.128)
+2023-04-01 15:53:56.981  INFO [32m[][0;39m 22780 --- [RMI TCP Connection(1)-172.17.96.43] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-01 15:53:56.982  INFO [32m[][0;39m 22780 --- [RMI TCP Connection(1)-172.17.96.43] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-04-01 15:53:56.983  INFO [32m[][0;39m 22780 --- [RMI TCP Connection(1)-172.17.96.43] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-04-01 15:54:01.051 ERROR [31m[][0;39m 22780 --- [XNIO-1 task-1] com.demo.action.MessageAction            : 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=xxx-111)
+2023-04-01 15:54:01.063  WARN [33m[][0;39m 22780 --- [XNIO-1 task-1] com.demo.action.MessageAction            : 接收msg的请求参数，内容为：Message(msg=123, pubdate=Mon Feb 13 00:00:00 CST 2023, email=644@qq.com, level=null, flag=xxx-111)
+2023-04-01 15:55:49.959  INFO [32m[][0;39m 22780 --- [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-04-01 15:55:49.964  INFO [32m[][0;39m 22780 --- [Thread-5] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:55:49.976  INFO [32m[][0;39m 22780 --- [Thread-5] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 15:55:49.981  INFO [32m[][0;39m 22780 --- [Thread-5] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-04-01 15:55:50.118  INFO [32m[][0;39m 22780 --- [restartedMain] com.demo.StartSpringBootApplication      : Starting StartSpringBootApplication using Java 11.0.18 on huaweibook14 with PID 22780 (E:\Users\64466\Documents\Workspace\microboot\microboot-web\build\classes\java\main started by 64466 in E:\Users\64466\Documents\Workspace\microboot)
+2023-04-01 15:55:50.119  INFO [32m[][0;39m 22780 --- [restartedMain] com.demo.StartSpringBootApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-04-01 15:55:50.799  WARN [33m[][0;39m 22780 --- [restartedMain] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2023-04-01 15:55:50.802  INFO [32m[][0;39m 22780 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:55:50.802  INFO [32m[][0;39m 22780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 678 ms
+2023-04-01 15:55:51.383  INFO [32m[][0;39m 22780 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-04-01 15:55:51.404  INFO [32m[][0;39m 22780 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:55:51.420  INFO [32m[][0;39m 22780 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 80 (http)
+2023-04-01 15:55:51.541  INFO [32m[][0;39m 22780 --- [restartedMain] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2023-04-01 15:55:51.542  INFO [32m[][0;39m 22780 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 118 ms
+2023-04-01 15:55:51.555  INFO [32m[][0;39m 22780 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 14 endpoint(s) beneath base path '/actuator'
+2023-04-01 15:55:51.594  INFO [32m[][0;39m 22780 --- [restartedMain] io.undertow                              : starting server: Undertow - 2.2.23.Final
+2023-04-01 15:55:51.615  INFO [32m[][0;39m 22780 --- [restartedMain] o.s.b.w.e.undertow.UndertowWebServer     : Undertow started on port(s) 9090 (http)
+2023-04-01 15:55:51.626  INFO [32m[][0;39m 22780 --- [restartedMain] com.demo.StartSpringBootApplication      : Started StartSpringBootApplication in 1.566 seconds (JVM running for 119.326)
+2023-04-01 15:55:51.629  INFO [32m[][0;39m 22780 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2023-04-01 16:01:19.176  INFO [32m[][0;39m 22780 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-04-01 16:01:19.186  INFO [32m[][0;39m 22780 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.23.Final

@@ -1,8 +1,12 @@
 package com.demo.action;
 
 import cn.hutool.json.JSONUtil;
+import com.demo.domain.Customers;
+import com.demo.service.IStudentService;
 import lombok.SneakyThrows;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.RequestContextHolder;
@@ -17,25 +21,13 @@ import java.util.Map;
 @RestController
 public class StudentAction {
 
-    @SneakyThrows
-    @PostMapping("student")
-    public Object addStudent() {
-        HttpServletRequest request = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest();
+    @Autowired
+    private IStudentService studentServiceImpl;
 
-        BufferedReader br = request.getReader();
-        StringBuilder sb = new StringBuilder();
-        String str;
-        while ((str = br.readLine()) != null) {
-            sb.append(str);
-        }
-        br.close();
-
-        Map<String, Object> ret = new HashMap<>() {{
-            put("code", 200);
-            put("data", JSONUtil.parse(sb));
-            put("message", "成功");
-        }};
-
-        return ret;
+    @GetMapping("/save")
+    public String save() {
+        System.out.println("save() in action");
+        studentServiceImpl.save();
+        return "save done...";
     }
 }

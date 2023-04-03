@@ -1,13 +1,15 @@
 ext.versions = [    // 定义所有要使用的版本号
-                    springboot            : '2.7.10', // SpringBoot版本号
-                    junit                 : '5.5.2', // Junit版本
-                    junitPlatformLauncher : '1.9.2', // Junit运行平台版本
-                    lombok                : '1.18.26',
-                    fastjson              : '1.2.80',
-                    jackson               : '2.12.1',
-                    itextpdf              : '5.5.13.3',
-                    easypoi               : '4.4.0',
-                    hibernate             : '6.2.5.Final',
+                    springboot           : '2.7.10', // SpringBoot版本号
+                    junit                : '5.5.2', // Junit版本
+                    junitPlatformLauncher: '1.9.2', // Junit运行平台版本
+                    lombok               : '1.18.26',
+                    fastjson             : '1.2.80',
+                    jackson              : '2.12.1',
+                    itextpdf             : '5.5.13.3',
+                    easypoi              : '4.4.0',
+                    hibernate            : '6.2.5.Final',
+                    mysql                : '8.0.32',
+                    mybatis              : '3.5.2'
 
 
 ]
@@ -33,4 +35,6 @@ ext.libraries = [   // 定义所有的依赖库
                     'easypoi'                  : "cn.afterturn:easypoi-spring-boot-starter:${versions.easypoi}",
                     // JSR303数据验证标准库
                     'hibernate'                : "org.hibernate.validator:hibernate-validator:${versions.hibernate}",
+                    'mysql'                    : "mysql:mysql-connector-java:${versions.mysql}",
+                    'mybatis'                  : "com.baomidou:mybatis-plus-boot-starter:${versions.mybatis}"
 ]

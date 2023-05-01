@@ -22,14 +22,14 @@ public class Message {
     @NotNull(message = "{message.pubdate.not-blank.error}")
     private Date pubdate;
 
-    @Email
-    @NotBlank(message = "{message.email.not-blank.error}")
-    private String email;
-
-    @Digits(integer = 1, fraction = 0)
-    private Integer level;
-
-    @NotBlank(message = "{message.flag.not-blank.error}")
-    @RegexValidator(pattern = "[a-zA-Z]{1,5}-\\d{1,3}", message = "{message.flag.regex.error}") // 自定义的验证规则
-    private String flag;
+//    @Email
+//    @NotBlank(message = "{message.email.not-blank.error}")
+//    private String email;
+//
+//    @Digits(integer = 1, fraction = 0)
+//    private Integer level;
+//
+//    @NotBlank(message = "{message.flag.not-blank.error}")
+//    @RegexValidator(pattern = "[a-zA-Z]{1,5}-\\d{1,3}", message = "{message.flag.regex.error}") // 自定义的验证规则
+//    private String flag;
 }

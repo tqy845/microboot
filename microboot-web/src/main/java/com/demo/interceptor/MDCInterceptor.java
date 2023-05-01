@@ -12,7 +12,7 @@ import java.util.UUID;
 @Slf4j
 public class MDCInterceptor implements HandlerInterceptor { // 定义拦截器
 
-    private final static String REQUEST_ID = "request_id";
+    private final static String REQUEST_ID = "requestId";
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -24,8 +24,7 @@ public class MDCInterceptor implements HandlerInterceptor { // 定义拦截器
         log.info("requestId = {} , client = {} , X-Forwarded-For = {}", uuid, clintIo, forward);
 
         MDC.put(REQUEST_ID, uuid); // 保存了MDC的数据
-
-        return HandlerInterceptor.super.preHandle(request, response, handler);
+        return true;
     }
 
     @Override
@@ -34,6 +33,5 @@ public class MDCInterceptor implements HandlerInterceptor { // 定义拦截器
         String uuid = MDC.get(REQUEST_ID);
         log.info("MDC操作记录结束，requestId = {}", uuid);
         MDC.remove(REQUEST_ID);
-        HandlerInterceptor.super.postHandle(request, response, handler, modelAndView);
     }
 }

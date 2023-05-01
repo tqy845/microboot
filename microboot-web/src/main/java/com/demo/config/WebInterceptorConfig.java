@@ -19,14 +19,14 @@ public class WebInterceptorConfig implements WebMvcConfigurer {
         WebMvcConfigurer.super.addInterceptors(registry);
     }
 
-    public HandlerInterceptor getDefaultHandlerInterceptor() {
-        return new DefaultHandlerInterceptor();
-    }
-
-    @Bean
-    public HandlerInterceptor getMessageHandlerInterceptor() {
-        return new MessageValidateInterceptor();
-    }
+//    public HandlerInterceptor getDefaultHandlerInterceptor() {
+//        return new DefaultHandlerInterceptor();
+//    }
+//
+//    @Bean
+//    public HandlerInterceptor getMessageHandlerInterceptor() {
+//        return new MessageValidateInterceptor();
+//    }
 
     @Bean
     public HandlerInterceptor getMDCHandlerInterceptor() {

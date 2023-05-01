@@ -24,7 +24,7 @@
         <Prudent>true</Prudent>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 设置日志保存路径，本次按照月份创建日志目录，而后每天的文件归档到一组 -->
-            <FileNamePattern>muyan-logs/%d{yyyy-MM}/yootk_%d{yyyy-MM-dd}.log</FileNamePattern>
+            <FileNamePattern>aigs-logs/%d{yyyy-MM}/aigs_%d{yyyy-MM-dd}.log</FileNamePattern>
             <MaxHistory>365</MaxHistory><!-- 删除超过365天的日志文件 -->
         </rollingPolicy>
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">

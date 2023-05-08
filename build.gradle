@@ -116,6 +116,8 @@ project('microboot-web') { // 子模块
         implementation libraries.'easypoi'
         implementation libraries.'hibernate'
         implementation libraries.'mybatis'
+        implementation libraries.'prometheus'
+
 
     }
 }

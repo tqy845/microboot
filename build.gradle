@@ -117,7 +117,8 @@ project('microboot-web') { // 子模块
         implementation libraries.'hibernate'
         implementation libraries.'mybatis'
         implementation libraries.'prometheus'
-
+        // Shedlock component
+        implementation libraries.'shedlock'
 
     }
 }

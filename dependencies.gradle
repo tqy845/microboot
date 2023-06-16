@@ -10,7 +10,10 @@ ext.versions = [    // 定义所有要使用的版本号
                     hibernate            : '6.2.5.Final',
                     mysql                : '8.0.32',
                     mybatis              : '3.5.2',
-                    prometheus           : '1.10.6'   // Prometheus监控数据版本
+                    prometheus           : '1.10.6',   // Prometheus监控数据版本
+                    shedlock             : '4.44.0',
+                    springDataRedis      : '3.0.5',
+                    commonsPool2         : '2.11.1',
 ]
 ext.libraries = [   // 定义所有的依赖库
                     'spring-boot-gradle-plugin': "org.springframework.boot:spring-boot-gradle-plugin:${versions.springboot}",
@@ -36,5 +39,11 @@ ext.libraries = [   // 定义所有的依赖库
                     'hibernate'                : "org.hibernate.validator:hibernate-validator:${versions.hibernate}",
                     'mysql'                    : "mysql:mysql-connector-java:${versions.mysql}",
                     'mybatis'                  : "com.baomidou:mybatis-plus-boot-starter:${versions.mybatis}",
-                    'prometheus'                  : "io.micrometer:micrometer-registry-prometheus:${versions.prometheus}"
+                    // Actuator
+                    'prometheus'               : "io.micrometer:micrometer-registry-prometheus:${versions.prometheus}",
+                    'shedlock'                 : "net.javacrumbs.shedlock:shedlock-spring:${versions.shedlock}",
+                    'shedlock-provider-redis'  : "net.javacrumbs.shedlock:shedlock-provider-redis-spring:${versions.shedlock}",
+                    'redis'                    : "org.springframework.boot:spring-boot-starter-data-redis:${versions.springDataRedis}",
+                    'pool2'                    : "org.apache.commons:commons-pool2:${versions.commonsPool2}",
+
 ]

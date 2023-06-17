@@ -2,48 +2,50 @@ ext.versions = [    // 定义所有要使用的版本号
                     springboot           : '2.7.10', // SpringBoot版本号
                     junit                : '5.5.2', // Junit版本
                     junitPlatformLauncher: '1.9.2', // Junit运行平台版本
-                    lombok               : '1.18.26',
-                    fastjson             : '1.2.80',
-                    jackson              : '2.12.1',
-                    itextpdf             : '5.5.13.3',
-                    easypoi              : '4.4.0',
-                    hibernate            : '6.2.5.Final',
-                    mysql                : '8.0.32',
-                    mybatis              : '3.5.2',
+                    lombok               : '1.18.26',       // Lombok组件对应版本
+                    fastjson             : '1.2.80',        // 阿里FastJson对应版本
+                    jackson              : '2.12.1',        // 配置Jackson的相关依赖库
+                    itextpdf             : '5.5.13.3',      // 生成PDF的依赖库
+                    easypoi              : '4.4.0',         // 生成Excel处理的依赖库
+                    hibernate            : '6.2.5.Final',   // JSR303验证库
+                    mysql                : '8.0.32',     // Mysql驱动版本号
+                    mybatis              : '3.5.2',     // Mybatis版本号
                     prometheus           : '1.10.6',   // Prometheus监控数据版本
-                    shedlock             : '4.44.0',
-                    springDataRedis      : '3.0.5',
-                    commonsPool2         : '2.11.1',
+                    shedlock             : '4.44.0',    // Shedlock组件对应版本
+                    springDataRedis      : '2.7.12',     // SpringDataRedis版本号
+                    commonsPool2         : '2.11.1',    // 连接池版本号
 ]
 ext.libraries = [   // 定义所有的依赖库
-                    'spring-boot-gradle-plugin': "org.springframework.boot:spring-boot-gradle-plugin:${versions.springboot}",
+                    'spring-boot-gradle-plugin'     : "org.springframework.boot:spring-boot-gradle-plugin:${versions.springboot}",
                     // 有关项目测试的依赖
-                    'junit-jupiter-api'        : "org.junit.jupiter:junit-jupiter-api:${versions.junit}",
-                    'junit-vintage-engine'     : "org.junit.vintage:junit-vintage-engine:${versions.junit}",
-                    'junit-jupiter-engine'     : "org.junit.jupiter:junit-jupiter-engine:${versions.junit}",
-                    'junit-platform-launcher'  : "org.junit.platform:junit-platform-launcher:${versions.junitPlatformLauncher}",
-                    'junit-bom'                : "org.junit:junit-bom:${versions.junit}",
+                    'junit-jupiter-api'             : "org.junit.jupiter:junit-jupiter-api:${versions.junit}",
+                    'junit-vintage-engine'          : "org.junit.vintage:junit-vintage-engine:${versions.junit}",
+                    'junit-jupiter-engine'          : "org.junit.jupiter:junit-jupiter-engine:${versions.junit}",
+                    'junit-platform-launcher'       : "org.junit.platform:junit-platform-launcher:${versions.junitPlatformLauncher}",
+                    'junit-bom'                     : "org.junit:junit-bom:${versions.junit}",
                     // 有关Lombok的依赖
-                    'lombok'                   : "org.projectlombok:lombok:${versions.lombok}",
+                    'lombok'                        : "org.projectlombok:lombok:${versions.lombok}",
                     // 有关FastJson的依赖
-                    'fastjson'                 : "com.alibaba:fastjson:${versions.fastjson}",
+                    'fastjson'                      : "com.alibaba:fastjson:${versions.fastjson}",
                     // 有关Jackson的依赖
-                    'jackson-dataformat-xml'   : "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${versions.jackson}",
-                    'jackson-databind'         : "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}",
-                    'jackson-annotations'      : "com.fasterxml.jackson.core:jackson-annotations:${versions.jackson}",
+                    'jackson-dataformat-xml'        : "com.fasterxml.jackson.dataformat:jackson-dataformat-xml:${versions.jackson}",
+                    'jackson-databind'              : "com.fasterxml.jackson.core:jackson-databind:${versions.jackson}",
+                    'jackson-annotations'           : "com.fasterxml.jackson.core:jackson-annotations:${versions.jackson}",
                     // 生成有关PDF的依赖库
-                    'itextpdf'                 : "com.itextpdf:itextpdf:${versions.itextpdf}",
+                    'itextpdf'                      : "com.itextpdf:itextpdf:${versions.itextpdf}",
                     // 生成有关Excel的依赖库
-                    'easypoi'                  : "cn.afterturn:easypoi-spring-boot-starter:${versions.easypoi}",
+                    'easypoi'                       : "cn.afterturn:easypoi-spring-boot-starter:${versions.easypoi}",
                     // JSR303数据验证标准库
-                    'hibernate'                : "org.hibernate.validator:hibernate-validator:${versions.hibernate}",
-                    'mysql'                    : "mysql:mysql-connector-java:${versions.mysql}",
-                    'mybatis'                  : "com.baomidou:mybatis-plus-boot-starter:${versions.mybatis}",
-                    // Actuator
-                    'prometheus'               : "io.micrometer:micrometer-registry-prometheus:${versions.prometheus}",
-                    'shedlock'                 : "net.javacrumbs.shedlock:shedlock-spring:${versions.shedlock}",
-                    'shedlock-provider-redis'  : "net.javacrumbs.shedlock:shedlock-provider-redis-spring:${versions.shedlock}",
-                    'redis'                    : "org.springframework.boot:spring-boot-starter-data-redis:${versions.springDataRedis}",
-                    'pool2'                    : "org.apache.commons:commons-pool2:${versions.commonsPool2}",
+                    'hibernate'                     : "org.hibernate.validator:hibernate-validator:${versions.hibernate}",
+                    'mysql'                         : "mysql:mysql-connector-java:${versions.mysql}",
+                    'mybatis'                       : "com.baomidou:mybatis-plus-boot-starter:${versions.mybatis}",
+                    // 以下配置为 Prometheus 监控数据操作
+                    'prometheus'                    : "io.micrometer:micrometer-registry-prometheus:${versions.prometheus}",
+                    // 以下配置为 Shedlock 分布式任务调度相关组件
+                    'shedlock-spring'               : "net.javacrumbs.shedlock:shedlock-spring:${versions.shedlock}",
+                    'shedlock-provider-redis-spring'       : "net.javacrumbs.shedlock:shedlock-provider-redis-spring:${versions.shedlock}",
+                    // 以下配置为 Redis缓存组件
+                    'spring-boot-starter-data-redis': "org.springframework.boot:spring-boot-starter-data-redis:${versions.springDataRedis}",
+                    'commons-pool2'                 : "org.apache.commons:commons-pool2:${versions.commonsPool2}",
 
 ]

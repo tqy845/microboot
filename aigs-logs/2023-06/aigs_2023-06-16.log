@@ -126,3 +126,9 @@ Caused by: java.net.SocketException: 权限不够
 2023-06-16 19:58:41.753  INFO [32m[][0;39m 42916 --- [XNIO-1 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录开始：requestId = 8b77a90b-9fed-4ab3-9807-4600006c37a7
 2023-06-16 19:58:41.754  INFO [32m[][0;39m 42916 --- [XNIO-1 task-1] com.demo.interceptor.MDCInterceptor      : requestId = 8b77a90b-9fed-4ab3-9807-4600006c37a7 , client = 0:0:0:0:0:0:0:1 , X-Forwarded-For = null
 2023-06-16 19:58:41.764  INFO [32m[8b77a90b-9fed-4ab3-9807-4600006c37a7][0;39m 42916 --- [XNIO-1 task-1] com.demo.interceptor.MDCInterceptor      : MDC操作记录结束，requestId = 8b77a90b-9fed-4ab3-9807-4600006c37a7
+2023-06-16 20:30:58.259  INFO [32m[][0;39m 42916 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-06-16 20:30:58.272  INFO [32m[][0;39m 42916 --- [SpringApplicationShutdownHook] io.undertow                              : stopping server: Undertow - 2.2.23.Final
+2023-06-16 20:30:58.277  INFO [32m[][0;39m 42916 --- [SpringApplicationShutdownHook] io.undertow.servlet                      : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-16 20:30:58.285  INFO [32m[][0;39m 42916 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-16 20:30:58.292  INFO [32m[][0;39m 42916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-06-16 20:30:58.307  INFO [32m[][0;39m 42916 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

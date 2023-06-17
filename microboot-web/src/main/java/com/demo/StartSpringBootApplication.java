@@ -9,6 +9,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @SpringBootApplication // 一个注解解决所有的问题
 // 项目中的过滤器使用了类的方式配置，则配置监听器的时候为了防止重复Bean注册，所以指定扫描包的名称
 @ServletComponentScan("com.demo.listener")   // Servlet组件扫描
+//@EnableScheduling // 启动定时调度
 public class StartSpringBootApplication extends SpringBootServletInitializer {
     public static void main(String[] args) {
         SpringApplication.run(StartSpringBootApplication.class, args); // 运行SpringBoot程序

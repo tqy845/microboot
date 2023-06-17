@@ -10,7 +10,7 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 @Configuration  // 配置类注解
-@EnableScheduling // 启动定时任务
+//@EnableScheduling // 启动定时任务
 // 分布式任务的调度如果锁被占据，那么其他节点是无法访问的
 @EnableSchedulerLock(defaultLockAtMostFor = "PT30S") // 30秒强制释放锁
 public class ShedlockRedisConfig {

@@ -22,10 +22,14 @@ public class MicrobootShedlockTask {
     // @SchedulerLock注解里面对于任务独占锁的时间有两个配置项：
     // lockAtLeastFor：成功执行定时任务的任务节点所能拥有的独占锁的最短时间
     // lockAtMostFor： 成功执行定时任务的任务节点所能拥有的独占锁的最长时间
-    @Scheduled(cron = "*/2 * * * * ?") // 每秒触发一次cron任务
+//    @Scheduled(cron = "*/2 * * * * ?") // 每秒触发一次cron任务
     @SchedulerLock(name = "microboot-task" , lockAtLeastFor = "5000") // 2秒后开启其他任务
-    public void runJobB() throws InterruptedException {
+    public void task() {
         log.info("【Shedlock任务】{}",new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date()));
-        TimeUnit.SECONDS.sleep(5);
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 80
 #  servlet:
 #    context-parameters: # 启动初始化参数s
 #      teacher: Emma

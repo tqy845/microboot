@@ -25,7 +25,7 @@ public class MicrobootShedlockTask {
     @Scheduled(cron = "*/2 * * * * ?") // 每秒触发一次cron任务
     @SchedulerLock(name = "microboot-task" , lockAtLeastFor = "5000") // 2秒后开启其他任务
     public void runJobB() throws InterruptedException {
-        log.info("[CRON任务]{}",new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date()));
+        log.info("【Shedlock任务】{}",new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date()));
         TimeUnit.SECONDS.sleep(5);
     }
 }

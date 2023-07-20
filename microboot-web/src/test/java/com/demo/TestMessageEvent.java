@@ -19,12 +19,8 @@ public class TestMessageEvent {
 
     @Test
     public void testEvent() {
-        System.out.println("测试进行...");
         this.publisher.publishEvent(
-                new YootkEvent(
-                        this,
-                        new Message("www.aigs.ltd","demo")
-                )
+                new Message("www.aigs.ltd", "aigs")
         );
     }
 }

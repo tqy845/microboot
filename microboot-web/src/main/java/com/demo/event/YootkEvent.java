@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEvent;
+import org.springframework.context.ApplicationEventPublisher;
 
 import java.time.Clock;
 
@@ -18,7 +19,6 @@ public class YootkEvent extends ApplicationEvent {
         // 事件类型的存储
         this.message = message;
     }
-
 
     public void fire(){ // 自定义方法
         log.info("message = {}" , this.message);

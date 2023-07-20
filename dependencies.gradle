@@ -1,7 +1,7 @@
 ext.versions = [    // 定义所有要使用的版本号
                     springboot           : '2.7.10', // SpringBoot版本号
-                    junit                : '5.5.2', // Junit版本
-                    junitPlatformLauncher: '1.9.2', // Junit运行平台版本
+                    junit                : '5.9.3', // Junit版本
+                    junitPlatformLauncher: '1.9.3', // Junit运行平台版本
                     lombok               : '1.18.26',       // Lombok组件对应版本
                     fastjson             : '1.2.80',        // 阿里FastJson对应版本
                     jackson              : '2.12.1',        // 配置Jackson的相关依赖库
@@ -19,7 +19,7 @@ ext.libraries = [   // 定义所有的依赖库
                     'spring-boot-gradle-plugin'     : "org.springframework.boot:spring-boot-gradle-plugin:${versions.springboot}",
                     // 有关项目测试的依赖
                     'junit-jupiter-api'             : "org.junit.jupiter:junit-jupiter-api:${versions.junit}",
-                    'junit-vintage-engine'          : "org.junit.vintage:junit-vintage-engine:${versions.junit}",
+//                    'junit-vintage-engine'          : "org.junit.vintage:junit-vintage-engine:${versions.junit}",
                     'junit-jupiter-engine'          : "org.junit.jupiter:junit-jupiter-engine:${versions.junit}",
                     'junit-platform-launcher'       : "org.junit.platform:junit-platform-launcher:${versions.junitPlatformLauncher}",
                     'junit-bom'                     : "org.junit:junit-bom:${versions.junit}",

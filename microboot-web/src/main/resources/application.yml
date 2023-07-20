@@ -41,23 +41,25 @@ spring:
       ddl-auto: update
     database: mysql
   # redis 相关配置
-  redis:
-    host: www.tqy.pub
-    port: 6379
-    password: 123456
-    database: 0
-    connect-timeout: 200 # 连接超时
-    timeout: 200 # 读取超时
-    lettuce: # 使用lettuce连接池
-      pool:
-        max-active: 100 # 连接池最大数
-        max-idle: 20 # 维护的最大数
-        min-idle: 10 # 维护的最小数
-        max-wait: 1000 # 最大的等待时间
-        time-between-eviction-runs: 2000 # 每两秒回收一次空闲连接
+#  redis:
+#    host: www.tqy.pub
+#    port: 6379
+#    password: 123456
+#    database: 0
+#    connect-timeout: 200 # 连接超时
+#    timeout: 200 # 读取超时
+#    lettuce: # 使用lettuce连接池
+#      pool:
+#        max-active: 100 # 连接池最大数
+#        max-idle: 20 # 维护的最大数
+#        min-idle: 10 # 维护的最小数
+#        max-wait: 1000 # 最大的等待时间
+#        time-between-eviction-runs: 2000 # 每两秒回收一次空闲连接
   profiles:
     active: env
-
+#content:
+#  listener:
+#    classes：com.demo.event.listener.YootkEventListener
 
 #  server:
 #    port: 9090

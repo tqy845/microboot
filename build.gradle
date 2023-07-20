@@ -41,18 +41,19 @@ subprojects {   // 子模块
     dependencies {  // 公共依赖库管理
         implementation('org.springframework.boot:spring-boot-devtools' // 允许项目热部署
         )
-        testImplementation('org.springframework.boot:spring-boot-starter-test') {
-            // 排除
-            exclude group: 'junit', module: 'junit'
-        }
+        testImplementation('org.springframework.boot:spring-boot-starter-test')
         testImplementation(enforcedPlatform(libraries.'junit-bom'))
         testImplementation(libraries.'junit-jupiter-api')
-        testImplementation(libraries.'junit-vintage-engine')
+        // 2023年7月20日发现使用Junit5测试平台会报错，必须取消使用Junit4的引入
+//        testImplementation(libraries.'junit-vintage-engine')
         testImplementation(libraries.'junit-jupiter-engine')
         testImplementation(libraries.'junit-platform-launcher')
         // 自动生成类
         compileOnly(libraries.'lombok') // 在编译时生效
         annotationProcessor(libraries.'lombok') // 注解生效
+    }
+    configurations {
+        testImplementation.exclude group: 'junit', module: 'junit'
     }
     sourceSets {    // 源代码目录配置
         main { // main及相关子目录配置

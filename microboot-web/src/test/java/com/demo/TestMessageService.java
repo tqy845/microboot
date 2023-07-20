@@ -1,3 +1,5 @@
+package com.demo;
+
 import com.demo.StartSpringBootApplication;
 import com.demo.service.IMessageService;
 import com.demo.vo.Message;

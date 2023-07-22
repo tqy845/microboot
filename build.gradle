@@ -109,6 +109,7 @@ project('microboot-web') { // 子模块
         implementation 'org.springframework.boot:spring-boot-starter-aop' // 引入aop依赖库
         implementation 'org.springframework.boot:spring-boot-starter-mail'
         implementation 'org.springframework.boot:spring-boot-starter-actuator'
+        implementation 'org.springframework.boot:spring-boot-starter-websocket'
         implementation libraries.'fastjson' // 引入FastJson依赖
 //        implementation  libraries.'jackson-dataformat-xml'
 //        implementation  libraries.'jackson-databind'

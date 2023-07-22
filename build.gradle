@@ -126,6 +126,11 @@ project('microboot-web') { // 子模块
 
     }
 }
+project('microboot-webflux') { // 子模块
+    dependencies { // 配置子模块依赖
+        implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    }
+}
 project('microboot-common') { // 子模块
     dependencies {
         api('org.springframework.boot:spring-boot-starter-web') {

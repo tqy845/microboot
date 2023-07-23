@@ -1,5 +1,9 @@
 rootProject.name = 'microboot'
 include 'microboot-common'
 include 'microboot-web'
+include 'microboot-rsocket-base'
+include 'microboot-rsocket-common'
+include 'microboot-rsocket-client'
 include 'microboot-webflux'
+include 'microboot-rsocket-server'
 

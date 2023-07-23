@@ -1,6 +1,6 @@
 package com.demo.service;
 
-import com.demo.vo.Message;
+import com.demo.rscoket.vo.Message;
 
 public interface IMessageService {
     Object echo(Message msg);

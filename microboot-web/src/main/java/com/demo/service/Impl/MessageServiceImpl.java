@@ -1,7 +1,7 @@
 package com.demo.service.Impl;
 
 import com.demo.service.IMessageService;
-import com.demo.vo.Message;
+import com.demo.rscoket.vo.Message;
 import org.springframework.stereotype.Service;
 
 @Service

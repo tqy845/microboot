@@ -1,7 +1,7 @@
 package com.demo.action;
 
-import com.demo.vo.Company;
-import com.demo.vo.Dept;
+import com.demo.rscoket.vo.Company;
+import com.demo.rscoket.vo.Dept;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

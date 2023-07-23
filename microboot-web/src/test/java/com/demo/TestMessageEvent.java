@@ -1,7 +1,6 @@
 package com.demo;
 
-import com.demo.event.YootkEvent;
-import com.demo.vo.Message;
+import com.demo.rscoket.vo.Message;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

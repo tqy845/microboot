@@ -1,4 +1,4 @@
-package com.demo.vo;
+package com.demo.rscoket.vo;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

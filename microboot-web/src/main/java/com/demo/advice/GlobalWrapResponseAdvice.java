@@ -1,7 +1,7 @@
 package com.demo.advice;
 
 import com.demo.commond.validation.annotation.WrapResponse;
-import com.demo.vo.ResponseResult;
+import com.demo.rscoket.vo.ResponseResult;
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;
 import org.springframework.http.converter.HttpMessageConverter;

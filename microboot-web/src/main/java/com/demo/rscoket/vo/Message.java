@@ -1,4 +1,4 @@
-package com.demo.vo;
+package com.demo.rscoket.vo;
 
 import cn.afterturn.easypoi.excel.annotation.Excel;
 import com.demo.commond.validation.annotation.RegexValidator;

@@ -1,23 +1,15 @@
 package com.demo;
 
-import com.demo.StartSpringBootApplication;
 import com.demo.action.MessageAction;
-import com.demo.vo.Message;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 import javax.annotation.Resource;
-import java.awt.*;
-import java.util.Date;
-import java.util.SimpleTimeZone;
-import java.util.concurrent.TimeUnit;
 
 @ExtendWith(SpringExtension.class)  // 使用Junit5的测试工具
 @WebAppConfiguration // 启动Web运行环境

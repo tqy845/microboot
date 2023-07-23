@@ -1,10 +1,7 @@
 package com.demo;
 
-import com.demo.StartSpringBootApplication;
 import com.demo.service.IMessageService;
-import com.demo.vo.Message;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

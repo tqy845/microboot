@@ -1,10 +1,8 @@
 package com.demo.config;
 
-import com.demo.event.YootkEvent;
-import com.demo.vo.Message;
+import com.demo.rscoket.vo.Message;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.event.EventListener;
 
 @Configuration
 @Slf4j

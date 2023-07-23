@@ -1,6 +1,6 @@
 package com.demo.action;
 
-import com.demo.vo.Message;
+import com.demo.rscoket.vo.Message;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
